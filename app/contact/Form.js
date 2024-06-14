@@ -96,9 +96,7 @@ const Form = () => {
 <title>Contact Us - Yukti Herbs</title>
         <meta name="description" content="Contact us for inquiries, feedback, or any other questions you may have." />
         <meta name="keywords" content="contact, contact us, get in touch, inquiries, feedback, support, Yukti Herbs, Dr. Suhas" />
-
-    
-
+<img className='m-auto max-w-auto md:mt-[52px] mt-[25px]' src='./bnr.jpg'/>
 <div className="mx-auto max-w-7xl px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">
           <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
@@ -246,15 +244,40 @@ const Form = () => {
           </div>
         </div>
       </div>
-         
+{/*          
       <iframe
       width="450"
       height="250"
       frameborder="0"
       referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/MAP_MODE?key=YOUR_API_KEY&PARAMETERS"
+      src="https://g.co/kgs/VBh2FnS"
       allowfullscreen>
-      </iframe>
+      </iframe> */}
+
+      {/* testimonils */}
+      <div className='hidden md:block place-content-center m-auto w-max'>
+      <p className="text-2xl font-bold text-[#2C3753] md:text-6xl">Testimonials </p>
+      </div>
+      <div className='hidden md:block md:mt-[25px] bg-[#ffdd00] pt-[20px] pb-[20px] rounded-[50px]'>
+      <div className='flex place-content-center m-auto gap-[25px] max-w-[800px]   '>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6LTJkagsrOw?si=NpvPRJRq0j57XoFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5NAFeDSzYr4?si=MdBySheMmCZalbjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ha42TcpyHTA?si=EvrZRlHBMGt3U_Fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OVi0KYfzcbg?si=LoLyNCH3Bihwxu7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      </div>
+
+      <div className='block md:hidden place-content-center m-auto w-max'>
+      <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Testimonials </p>
+      </div>
+      <div className='block md:hidden mt-[20px] md:mt-[25px] bg-[#ffdd00] pt-[20px] pb-[20px] rounded-[20px]'>
+      <div className=' place-content-center w-max m-auto gap-[25px]   '>
+      <iframe width="300" height="210" src="https://www.youtube.com/embed/6LTJkagsrOw?si=NpvPRJRq0j57XoFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="300" height="210" src="https://www.youtube.com/embed/5NAFeDSzYr4?si=MdBySheMmCZalbjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="300" height="210" src="https://www.youtube.com/embed/Ha42TcpyHTA?si=EvrZRlHBMGt3U_Fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="300" height="210" src="https://www.youtube.com/embed/OVi0KYfzcbg?si=LoLyNCH3Bihwxu7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      </div>
 
     </>
   );
