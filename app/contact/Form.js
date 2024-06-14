@@ -15,12 +15,12 @@ const locations = [
 //     timings: 'Mon-Sat 9am to 5pm.',
 //     address: '3124, Sector 61, Phase-7, Mohali 160061 IN',
 //   },
-  {
-    title: 'Contact : +91 7527869388',
-  },
-  {
-    title: 'E-mail : yuktiherbs@gmail.com',
-  },
+  // {
+  //   title: 'Contact : +91 7527869388',
+  // },
+  // {
+  //   title: 'Email : yuktiherbs@gmail.com',
+  // },
 ]
 const Form = () => {
   const [showTick, setShowTick] = useState(false);
@@ -237,6 +237,10 @@ const Form = () => {
                     <p className="text-sm font-semibold text-[#2C3753]">{location.address}</p>
                   </div>
                 ))}
+                <div>
+                  <p className="w-full text-base  text-[#2C3753]">Contact: +91 7527869388</p>
+                  <p className="w-full text-base  text-[#2C3753]">Email: yuktiherbs@gmail.com</p>
+                </div>
               </div>
             </div>
           </div>
