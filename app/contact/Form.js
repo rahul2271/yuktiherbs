@@ -386,12 +386,18 @@ const Form = () => {
 
 {/* Doctor */}
 
-    <div className='max-w-800px w-max m-auto place-content-center flex'>
+    <div className='mt-[70px] mb-[1 70px] max-w-800px w-max m-auto place-content-center flex'>
       <div className=''>
-        <Image width={500} height={800} src="/doctor.png"></Image>
+        <Image width={500} height={800} src="/d2.png"></Image>
+        <p className='text-[#2C3753] w-max m-auto place-content-center text-4xl font-extrabold '>Dr.Suhas Sakhare</p>
+        <p className='text-[#2C3753] w-max m-auto place-content-center text-xl  '>MD, PhD Ayurveda Doctor</p>
+
       </div>
       <div className=''>
       <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Our expert Doctors. </p>
+      <p className="text-3xl font-bold text-[#2C3753] md:text-xl">Meet our qualified MD and PhD Ayurveda experts<br/> and find the right treatment.<br/> Discuss your health issues and medical history from the comfort of your place.<br/> Or visit our hospital for in-person consultation. </p>
+
+      
     </div>
     </div>
 
