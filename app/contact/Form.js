@@ -8,62 +8,62 @@ import Link from 'next/link';
 const items = [
   { 
     id: 1, 
-    imgSrc: "./kidney.jpg", 
+    imgSrc: "/kidney.jpg", 
     title: "Kidney Disorder", 
-    description: "Lorem ipsum dolor sit amet consectetur " 
+    description: "Restore Kidney function to hit back kidney failure. " 
   },
   { 
     id: 2, 
-    imgSrc: "./heart.jpg", 
+    imgSrc: "/heart.jpg", 
     title: "Heart Disease", 
     description: "An overview of heart diseases and their impact." 
   },
   { 
     id: 3, 
-    imgSrc: "./lungs.jpg", 
+    imgSrc: "/lungs.jpg", 
     title: "Lung Disease", 
     description: "Understanding various lung conditions and treatments." 
   },
   // Add more objects with different parameters as needed
   { 
     id: 4, 
-    imgSrc: "./brain.jpg", 
+    imgSrc: "/brain.jpg", 
     title: "Brain Disorder", 
     description: "The complexities of brain disorders and care strategies." 
   },
   { 
     id: 5, 
-    imgSrc: "./liver.jpg", 
+    imgSrc: "/liver.jpg", 
     title: "Liver Disease", 
     description: "Insights into liver diseases and preventive measures." 
   },
   { 
     id: 6, 
-    imgSrc: "./stomach.jpg", 
+    imgSrc: "/stomach.jpg", 
     title: "Stomach Issues", 
     description: "Common stomach issues and how to manage them." 
   },
   { 
     id: 7, 
-    imgSrc: "./skin.jpg", 
+    imgSrc: "/skin.jpg", 
     title: "Skin Conditions", 
     description: "Different skin conditions and skincare tips." 
   },
   { 
     id: 8, 
-    imgSrc: "./bones.jpg", 
+    imgSrc: "/bones.jpg", 
     title: "Bone Disorders", 
     description: "Bone health and disorders you should know about." 
   },
   { 
     id: 9, 
-    imgSrc: "./muscle.jpg", 
+    imgSrc: "/muscle.jpg", 
     title: "Muscle Ailments", 
     description: "Muscle ailments and effective treatment options." 
   },
   { 
     id: 10, 
-    imgSrc: "./eyes.jpg", 
+    imgSrc: "/eyes.jpg", 
     title: "Eye Conditions", 
     description: "Eye conditions and how to protect your vision." 
   }
@@ -327,21 +327,23 @@ const Form = () => {
       <p className="text-2xl font-bold text-[#2C3753] md:text-6xl">Conditions We Treat. </p>
     </div>
     <div className='hidden md:block'>
-    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 grid-cols-5 gap-6">
+    <div className="mx-auto grid w-full max-w-7xl items-center  px-2 py-10 grid-cols-5 gap-6">
   {items.map((item) => (
     <div
       key={item.id}
       className="relative aspect-[16/9] w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
     >
-      <img
+      <Image
+        width={250}
+        height={250}
         src={item.imgSrc}
         alt={item.title}
         className="z-0 h-full w-full rounded-md object-cover"
       />
-      <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
+      <div className="absolute inset-0 rounded-md bg-gradient-to-t from-[#2C3753] to-transparent"></div>
       <div className="absolute bottom-4 left-4 text-left">
-        <h1 className="text-md font-semibold text-white">{item.title}</h1>
-        <p className="mt-2 text-[5px] text-gray-300">
+        <h1 className="text-2xl font-semibold text-white">{item.title}</h1>
+        <p className="mt-2 text-[15px] text-gray-300">
           {item.description}
         </p>
       </div>
@@ -357,21 +359,23 @@ const Form = () => {
       <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Conditions We Treat. </p>
     </div>
     <div className='block md:hidden'>
-    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 grid-cols-2 gap-6">
+    <div className="mx-auto grid w-full max-w-7xl items-center px-2 py-10 grid-cols-2 gap-6">
   {items.map((item) => (
     <div
       key={item.id}
       className="relative aspect-[16/9] w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
     >
-      <img
+      <Image
+        width={250}
+        height={250}
         src={item.imgSrc}
         alt={item.title}
         className="z-0 h-full w-full rounded-md object-cover"
       />
-      <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
+      <div className="absolute inset-0 rounded-md bg-gradient-to-t from-[#2C3753] to-transparent"></div>
       <div className="absolute bottom-4 left-4 text-left">
-        <h1 className="text-md font-semibold text-white">{item.title}</h1>
-        <p className="mt-2 text-[5px] text-gray-300">
+        <h1 className="text-sm font-semibold text-white">{item.title}</h1>
+        <p className=" text-[7px] text-gray-300">
           {item.description}
         </p>
       </div>
