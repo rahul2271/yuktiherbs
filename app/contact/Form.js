@@ -323,7 +323,7 @@ const Form = () => {
 
 
 {/* Conditions we treat for desktop */}
-    <div className='hidden md:block place-content-center m-auto w-max'>
+    <div className='mt-[50px] hidden md:block place-content-center m-auto w-max'>
       <p className="text-2xl font-bold text-[#2C3753] md:text-6xl">Conditions We Treat. </p>
     </div>
     <div className='hidden md:block'>
@@ -388,10 +388,10 @@ const Form = () => {
 
 
       {/* testimonils */}
-      <div className='hidden md:block place-content-center m-auto w-max'>
-      <p className="text-2xl font-bold text-[#2C3753] md:text-6xl">Testimonials </p>
+      <div className=' mt-[50px] hidden md:block place-content-center m-auto w-max'>
+      <p className=" text-2xl font-bold text-[#2C3753] md:text-6xl">Testimonials </p>
       </div>
-      <div className='hidden md:block md:mt-[25px] bg-[#ffdd00] pt-[20px] pb-[20px] rounded-[50px]'>
+      <div className='hidden md:block md:mt-[25px]  pt-[20px] pb-[20px] rounded-[50px]'>
       <div className='flex place-content-center m-auto gap-[25px] max-w-[800px]   '>
       <iframe className='rounded-[50px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/6LTJkagsrOw?si=NpvPRJRq0j57XoFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe className='rounded-[50px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/5NAFeDSzYr4?si=MdBySheMmCZalbjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -400,10 +400,10 @@ const Form = () => {
       </div>
       </div>
     {/* testimonila for mobile */}
-      <div className='block md:hidden place-content-center m-auto w-max'>
+      <div className='block mt-[30px] md:hidden place-content-center m-auto w-max'>
       <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Testimonials </p>
       </div>
-      <div className='block md:hidden mt-[20px] md:mt-[25px] bg-[#ffdd00] pt-[20px] pb-[20px] rounded-[20px]'>
+      <div className='block md:hidden mt-[10px] md:mt-[25px]  pt-[20px] pb-[20px] rounded-[20px]'>
       <div className=' place-content-center w-max m-auto   '>
       <iframe className='rounded-[50px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/6LTJkagsrOw?si=NpvPRJRq0j57XoFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe className='rounded-[50px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/5NAFeDSzYr4?si=MdBySheMmCZalbjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
