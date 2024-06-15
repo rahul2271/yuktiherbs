@@ -5,6 +5,70 @@ import Link from 'next/link';
 // import Check from './check.gif'
 // import { Menu, X, MapPin } from 'lucide-react'
 
+const items = [
+  { 
+    id: 1, 
+    imgSrc: "./kidney.jpg", 
+    title: "Kidney Disorder", 
+    description: "Lorem ipsum dolor sit amet consectetur " 
+  },
+  { 
+    id: 2, 
+    imgSrc: "./heart.jpg", 
+    title: "Heart Disease", 
+    description: "An overview of heart diseases and their impact." 
+  },
+  { 
+    id: 3, 
+    imgSrc: "./lungs.jpg", 
+    title: "Lung Disease", 
+    description: "Understanding various lung conditions and treatments." 
+  },
+  // Add more objects with different parameters as needed
+  { 
+    id: 4, 
+    imgSrc: "./brain.jpg", 
+    title: "Brain Disorder", 
+    description: "The complexities of brain disorders and care strategies." 
+  },
+  { 
+    id: 5, 
+    imgSrc: "./liver.jpg", 
+    title: "Liver Disease", 
+    description: "Insights into liver diseases and preventive measures." 
+  },
+  { 
+    id: 6, 
+    imgSrc: "./stomach.jpg", 
+    title: "Stomach Issues", 
+    description: "Common stomach issues and how to manage them." 
+  },
+  { 
+    id: 7, 
+    imgSrc: "./skin.jpg", 
+    title: "Skin Conditions", 
+    description: "Different skin conditions and skincare tips." 
+  },
+  { 
+    id: 8, 
+    imgSrc: "./bones.jpg", 
+    title: "Bone Disorders", 
+    description: "Bone health and disorders you should know about." 
+  },
+  { 
+    id: 9, 
+    imgSrc: "./muscle.jpg", 
+    title: "Muscle Ailments", 
+    description: "Muscle ailments and effective treatment options." 
+  },
+  { 
+    id: 10, 
+    imgSrc: "./eyes.jpg", 
+    title: "Eye Conditions", 
+    description: "Eye conditions and how to protect your vision." 
+  }
+];
+
 const locations = [
   {
     title: 'Mohali',
@@ -258,80 +322,62 @@ const Form = () => {
       </iframe> */}
 
 
-{/* Conditions we treat */}
+{/* Conditions we treat for desktop */}
+    <div className='hidden md:block place-content-center m-auto w-max'>
+      <p className="text-2xl font-bold text-[#2C3753] md:text-6xl">Conditions We Treat. </p>
+    </div>
     <div className='hidden md:block'>
-    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-5 md:gap-6 md:space-y-0 lg:grid-cols-5">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <div
-          key={i}
-          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
-        >
-          <img
-            src="./kidney.jpg"
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-lg font-semibold text-white">Kidney Disorder</h1>
-            <p className="mt-2 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-            </p>
-
-          </div>
-        </div>
-      ))}
+    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 grid-cols-5 gap-6">
+  {items.map((item) => (
+    <div
+      key={item.id}
+      className="relative aspect-[16/9] w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
+    >
+      <img
+        src={item.imgSrc}
+        alt={item.title}
+        className="z-0 h-full w-full rounded-md object-cover"
+      />
+      <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
+      <div className="absolute bottom-4 left-4 text-left">
+        <h1 className="text-md font-semibold text-white">{item.title}</h1>
+        <p className="mt-2 text-[5px] text-gray-300">
+          {item.description}
+        </p>
+      </div>
     </div>
-    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-5 md:gap-6 md:space-y-0 lg:grid-cols-5">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <div
-          key={i}
-          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
-        >
-          <img
-            src="./kidney.jpg"
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-lg font-semibold text-white">Kidney Disorder</h1>
-            <p className="mt-2 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-            </p>
-
-          </div>
-        </div>
-      ))}
-    </div>
+  ))}
+</div>
     </div>
 
 
 
-
+{/* Conditions we treat for mobile */}
+<div className='block md:hidden place-content-center m-auto w-max'>
+      <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Conditions We Treat. </p>
+    </div>
     <div className='block md:hidden'>
-    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 grid-cols-2 gap-6  ">
-      {Array.from({ length: 10 }).map((_, i) => (
-        <div
-          key={i}
-          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
-        >
-          <img
-            src="./kidney.jpg"
-            alt="AirMax Pro"
-            className="z-0 h-full w-full rounded-md object-cover"
-          />
-          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
-          <div className="absolute bottom-4 left-4 text-left">
-            <h1 className="text-md font-semibold text-white">Kidney Disorder</h1>
-            <p className="mt-2 text-[5px] text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-            </p>
-
-          </div>
-        </div>
-      ))}
+    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 grid-cols-2 gap-6">
+  {items.map((item) => (
+    <div
+      key={item.id}
+      className="relative aspect-[16/9] w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
+    >
+      <img
+        src={item.imgSrc}
+        alt={item.title}
+        className="z-0 h-full w-full rounded-md object-cover"
+      />
+      <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
+      <div className="absolute bottom-4 left-4 text-left">
+        <h1 className="text-md font-semibold text-white">{item.title}</h1>
+        <p className="mt-2 text-[5px] text-gray-300">
+          {item.description}
+        </p>
+      </div>
     </div>
+  ))}
+</div>
     </div>
 
 
