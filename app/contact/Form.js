@@ -7,29 +7,33 @@ import Link from 'next/link';
 
 const items = [
   { 
-    id: 1, 
-    imgSrc: "/kidney.jpg", 
-    title: "Kidney Disorder", 
-    description: "Restore Kidney function to hit back kidney failure. " 
+    id: 6, 
+    imgSrc: "/stomach.jpg", 
+    title: "Digestive Disorders", 
+    description: "Common stomach issues and how to manage them." 
+
   },
   { 
-    id: 2, 
-    imgSrc: "/heart.jpg", 
-    title: "Heart Disease", 
-    description: "An overview of heart diseases and their impact." 
+    id: 7, 
+    imgSrc: "/skin.jpg", 
+    title: "Skin Disorders", 
+    description: "Different skin conditions and skincare tips." 
+
   },
   { 
-    id: 3, 
-    imgSrc: "/lungs.jpg", 
-    title: "Lung Disease", 
-    description: "Understanding various lung conditions and treatments." 
+    id: 8, 
+    imgSrc: "/bones.jpg", 
+    title: "Joint Disorders", 
+    description: "Bone health and disorders you should know about." 
+
   },
   // Add more objects with different parameters as needed
   { 
-    id: 4, 
-    imgSrc: "/brain.jpg", 
-    title: "Brain Disorder", 
-    description: "The complexities of brain disorders and care strategies." 
+    id: 10, 
+    imgSrc: "/AID.jpg", 
+    title: "Auto-Immune Disorders", 
+    description: "Eye conditions and how to protect your vision." 
+
   },
   { 
     id: 5, 
@@ -39,33 +43,33 @@ const items = [
   },
   { 
     id: 6, 
-    imgSrc: "/stomach.jpg", 
-    title: "Stomach Issues", 
-    description: "Common stomach issues and how to manage them." 
+    imgSrc: "/kidney.jpg", 
+    title: "Kidney Disorders", 
+    description: "Restore Kidney function to hit back kidney failure." 
   },
   { 
     id: 7, 
-    imgSrc: "/skin.jpg", 
-    title: "Skin Conditions", 
-    description: "Different skin conditions and skincare tips." 
+    imgSrc: "/heart.jpg", 
+    title: "Heart Disorders", 
+    description: "An overview of heart diseases and their impact." 
   },
   { 
     id: 8, 
-    imgSrc: "/bones.jpg", 
-    title: "Bone Disorders", 
-    description: "Bone health and disorders you should know about." 
+    imgSrc: "/lungs.jpg", 
+    title: "Respiratory Disorders", 
+    description: "Understanding various lungs conditions and treatments." 
   },
   { 
     id: 9, 
-    imgSrc: "/muscle.jpg", 
-    title: "Muscle Ailments", 
+    imgSrc: "/mf.jpg", 
+    title: "Male & Female Infertility", 
     description: "Muscle ailments and effective treatment options." 
   },
   { 
-    id: 10, 
-    imgSrc: "/eyes.jpg", 
-    title: "Eye Conditions", 
-    description: "Eye conditions and how to protect your vision." 
+    id: 4, 
+    imgSrc: "/brain.jpg", 
+    title: "Brain Disorders", 
+    description: "The complexities of brain disorders and care strategies." 
   }
 ];
 
@@ -396,7 +400,7 @@ const Form = () => {
       <div className=''>
         <Image width={500} height={800} src="/d2.png"></Image>
         <p className='text-[#2C3753] w-max m-auto place-content-center text-4xl font-extrabold '>Dr.Suhas Sakhare</p>
-        <p className='text-[#2C3753] w-max m-auto place-content-center text-xl  '>MD, PhD Ayurveda Doctor</p>
+        <p className='text-[#2C3753] w-max m-auto place-content-center text-xl  '>MD, PhD Ayurveda & Panchakarma Expert</p>
 
       </div>
       <div className=''>
@@ -410,7 +414,7 @@ const Form = () => {
 
       {/* testimonils */}
       <div className=' mt-[50px] hidden md:block place-content-center m-auto w-max'>
-      <p className=" text-2xl font-bold text-[#2C3753] md:text-6xl">Testimonials </p>
+      <p className=" text-2xl font-bold text-[#2C3753] md:text-6xl">Customer Reviews </p>
       </div>
       <div className='hidden md:block md:mt-[25px]  pt-[20px] pb-[20px] rounded-[50px]'>
       <div className='flex place-content-center m-auto gap-[25px] max-w-[800px]   '>
@@ -422,7 +426,7 @@ const Form = () => {
       </div>
     {/* testimonila for mobile */}
       <div className='block mt-[30px] md:hidden place-content-center m-auto w-max'>
-      <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Testimonials </p>
+      <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Customer Reviews </p>
       </div>
       <div className='block md:hidden mt-[10px] md:mt-[25px]  pt-[20px] pb-[20px] rounded-[20px]'>
       <div className=' place-content-center w-max m-auto   '>
