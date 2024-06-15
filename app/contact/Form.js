@@ -413,7 +413,7 @@ const Form = () => {
       </div>
       {/* More button */}
       <div className="mt-[20px] flex items-center justify-center gap-x-2">
-        <Link className="rounded-[20px] bg-[#ffdd00] border- border-black px-[60px] py-2 md:px-[80px] md:py-[10px] text-sm md:text-[18px] font-semibold text-black shadow-md hover:bg-[#ffdd00]/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" target='_blank' href="https://www.youtube.com/@Yukti_Herbs">More</Link>
+        <Link className="rounded-[20px] bg-[#2C3753]  px-[60px] py-2 md:px-[80px] md:py-[10px] text-sm md:text-[18px] font-semibold text-white shadow-md hover:bg-[#2C3753]/50 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" target='_blank' href="https://www.youtube.com/@Yukti_Herbs">More</Link>
       </div>
 
     </>
