@@ -217,6 +217,8 @@ const Form = () => {
         </div>
       )} */}
 
+
+{/* Our Hospital */}
 <div className="rounded-lg bg-mypurple">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="py-20">
@@ -255,6 +257,86 @@ const Form = () => {
       allowfullscreen>
       </iframe> */}
 
+
+{/* Conditions we treat */}
+    <div className='hidden md:block'>
+    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-5 md:gap-6 md:space-y-0 lg:grid-cols-5">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <div
+          key={i}
+          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
+        >
+          <img
+            src="./kidney.jpg"
+            alt="AirMax Pro"
+            className="z-0 h-full w-full rounded-md object-cover"
+          />
+          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <div className="absolute bottom-4 left-4 text-left">
+            <h1 className="text-lg font-semibold text-white">Kidney Disorder</h1>
+            <p className="mt-2 text-sm text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+            </p>
+
+          </div>
+        </div>
+      ))}
+    </div>
+    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-5 md:gap-6 md:space-y-0 lg:grid-cols-5">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <div
+          key={i}
+          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
+        >
+          <img
+            src="./kidney.jpg"
+            alt="AirMax Pro"
+            className="z-0 h-full w-full rounded-md object-cover"
+          />
+          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <div className="absolute bottom-4 left-4 text-left">
+            <h1 className="text-lg font-semibold text-white">Kidney Disorder</h1>
+            <p className="mt-2 text-sm text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+            </p>
+
+          </div>
+        </div>
+      ))}
+    </div>
+    </div>
+
+
+
+
+    <div className='block md:hidden'>
+    <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 grid-cols-2 gap-6  ">
+      {Array.from({ length: 10 }).map((_, i) => (
+        <div
+          key={i}
+          className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
+        >
+          <img
+            src="./kidney.jpg"
+            alt="AirMax Pro"
+            className="z-0 h-full w-full rounded-md object-cover"
+          />
+          <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <div className="absolute bottom-4 left-4 text-left">
+            <h1 className="text-md font-semibold text-white">Kidney Disorder</h1>
+            <p className="mt-2 text-[5px] text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+            </p>
+
+          </div>
+        </div>
+      ))}
+    </div>
+    </div>
+
+
+
+
       {/* testimonils */}
       <div className='hidden md:block place-content-center m-auto w-max'>
       <p className="text-2xl font-bold text-[#2C3753] md:text-6xl">Testimonials </p>
@@ -279,6 +361,7 @@ const Form = () => {
       <iframe className='rounded-[50px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/OVi0KYfzcbg?si=LoLyNCH3Bihwxu7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       </div>
+      {/* More button */}
       <div className="mt-[20px] flex items-center justify-center gap-x-2">
         <Link className="rounded-[20px] bg-[#ffdd00] border- border-black px-[60px] py-2 md:px-[80px] md:py-[10px] text-sm md:text-[18px] font-semibold text-black shadow-md hover:bg-[#ffdd00]/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black" target='_blank' href="https://www.youtube.com/@Yukti_Herbs">More</Link>
       </div>
