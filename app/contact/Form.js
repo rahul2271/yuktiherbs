@@ -73,7 +73,7 @@ const locations = [
   {
     title: 'Mohali',
     timings: 'Mon-Sat 9am to 5pm.',
-    address: 'Plot. 956, Sector 82, JLPL Industrial area, SAS Nagar, Punjab 140306 IN',
+    address: 'Plot. 956, Sector 82, JLPL Industrial area, Mohali, Punjab 140306 IN',
   },
 //   {
 //     title: 'Chandigarh office',
@@ -162,15 +162,18 @@ const Form = () => {
         <meta name="description" content="Contact us for inquiries, feedback, or any other questions you may have." />
         <meta name="keywords" content="contact, contact us, get in touch, inquiries, feedback, support, Yukti Herbs, Dr. Suhas" />
 <img className='m-auto max-w-auto md:mt-[52px] mt-[25px]' src='./bnr.jpg'/>
+<div>
+  <p className="text-center text-2xl font-extrabold text-[#2C3753] md:mt-[20px] md:text-6xl">Multi-Speciality Ayurveda & Panchakarma Hospital.</p>
+</div>
 <div className="mx-auto max-w-7xl px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">
           <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
             {/* contact from */}
             <div className="flex items-center justify-center">
               <div className="px-2 md:px-12">
-                <p className="text-2xl font-bold text-[#2C3753] md:text-4xl">Contact Us Today</p>
+                <p className="text-2xl font-bold text-[#2C3753] md:text-4xl">Contact Us Now</p>
                 <p className="mt-4 text-lg text-[#2C3753]">
-                Our executives will help you.
+                Our Patient Care Executives will help you.
                 </p>
 
                 <form onSubmit={handleSubmit} className="mt-8 space-y-4">
@@ -288,8 +291,8 @@ const Form = () => {
           <div className="py-20">
             <div className="grid grid-cols-1 gap-x-20 gap-y-8 lg:grid-cols-2">
               <div className="space-y-4">
-                <p className="w-full text-4xl font-bold text-[#2C3753]">Our Hospital</p>
-                <p className="w-full text-lg text-[#2C3753]">Find us at these locations.</p>
+                <p className="w-full text-4xl font-bold text-[#2C3753]">Visit our Hospital at Address.</p>
+                {/* <p className="w-full text-lg text-[#2C3753]">Find us at these locations.</p> */}
               </div>
               <div className="space-y-4 divide-y-2">
                 {locations.map((location) => (
@@ -297,13 +300,16 @@ const Form = () => {
                     key={location.title}
                     className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full"
                   >
-                    <p className="w-full text-xl font-semibold  text-[#2C3753]">{location.title}</p>
-                    <p className="w-full text-base  text-[#2C3753]">{location.timings}</p>
+                    {/* <p className="w-full text-xl font-semibold  text-[#2C3753]">{location.title}</p> */}
+                    {/* <p className="w-full text-base  text-[#2C3753]">{location.timings}</p> */}
                     <p className="text-sm font-semibold text-[#2C3753]">{location.address}</p>
                   </div>
                 ))}
                 <div>
                   <p className="w-full text-base  text-[#2C3753]">Contact: +91 7527869388</p>
+                  <p className="w-full text-base  text-[#2C3753]">Contact: +91 8288882923</p>
+
+                  <p className="w-full text-base  text-[#2C3753]">Contact: +91 9875900272</p>
                   <p className="w-full text-base  text-[#2C3753]">Email: yuktiherbs@gmail.com</p>
                 </div>
               </div>
