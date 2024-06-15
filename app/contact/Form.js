@@ -384,7 +384,16 @@ const Form = () => {
 </div>
     </div>
 
+{/* Doctor */}
 
+    <div className='max-w-800px w-max m-auto place-content-center flex'>
+      <div className=''>
+        <Image width={500} height={800} src="/doctor.png"></Image>
+      </div>
+      <div className=''>
+      <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Our expert Doctors. </p>
+    </div>
+    </div>
 
 
       {/* testimonils */}
