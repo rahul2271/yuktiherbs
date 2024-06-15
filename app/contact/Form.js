@@ -10,21 +10,21 @@ const items = [
     id: 6, 
     imgSrc: "/stomach.jpg", 
     title: "Digestive Disorders", 
-    description: "Common stomach issues and how to manage them." 
+    description: "." 
 
   },
   { 
     id: 7, 
     imgSrc: "/skin.jpg", 
     title: "Skin Disorders", 
-    description: "Different skin conditions and skincare tips." 
+    description: "Skin shine and all fine." 
 
   },
   { 
     id: 8, 
     imgSrc: "/bones.jpg", 
     title: "Joint Disorders", 
-    description: "Bone health and disorders you should know about." 
+    description: "Eliminate stiffness to stimulate flexibility." 
 
   },
   // Add more objects with different parameters as needed
@@ -32,14 +32,14 @@ const items = [
     id: 10, 
     imgSrc: "/AID.jpg", 
     title: "Auto-Immune Disorders", 
-    description: "Eye conditions and how to protect your vision." 
+    description: "Build internal army to fight internal unseen invaders" 
 
   },
   { 
     id: 5, 
     imgSrc: "/liver.jpg", 
     title: "Liver Disease", 
-    description: "Insights into liver diseases and preventive measures." 
+    description: "Love your liver to live life." 
   },
   { 
     id: 6, 
@@ -51,19 +51,19 @@ const items = [
     id: 7, 
     imgSrc: "/heart.jpg", 
     title: "Heart Disorders", 
-    description: "An overview of heart diseases and their impact." 
+    description: "Defeat disease to healthy beat." 
   },
   { 
     id: 8, 
     imgSrc: "/lungs.jpg", 
     title: "Respiratory Disorders", 
-    description: "Understanding various lungs conditions and treatments." 
+    description: "Breathe with ease, Feel comfortable." 
   },
   { 
     id: 9, 
     imgSrc: "/mf.jpg", 
     title: "Male & Female Infertility", 
-    description: "Muscle ailments and effective treatment options." 
+    description: "Happy you and Happy us." 
   },
   { 
     id: 4, 
