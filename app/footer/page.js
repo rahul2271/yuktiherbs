@@ -5,11 +5,12 @@ import Image from "next/image";
 
 export default function Footer(){
     return(
-        <div className="bg-gray-200 mt-[50px]">
+        <>
+        <div className="hidden md:block bg-gray-200 mt-[50px]">
             <div className="bg-[#2C3753] pt-[10px] pb-[10px] text-center">
-                <p className="text-[10px] md:text-[15px] text-white">DISCLAIMER : * This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+                <p className="text-[15px] text-white">DISCLAIMER : * This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
             </div>
-            <div className="md:block hidden space-x-[100px] m-auto w-max place-content-center m-auto w-max bg-gray-200 pt-[25px] pb-[50px] flex">
+            <div className="space-x-[100px] m-auto w-max place-content-center m-auto w-max bg-gray-200 pt-[25px] pb-[50px] flex">
                 <div>
                     <div className="">
                         <p className="text-[#2C3753] font-bold text-xl">Get in touch</p>
@@ -142,10 +143,13 @@ export default function Footer(){
 
                 </div>
             </div>
+        </div>
 
 
-
-            <div className="space-y-[40px] m-auto w-max place-content-center m-auto w-max bg-gray-200 pt-[25px] pb-[50px] block md:hidden">
+        <div className="block md:hidden bg-gray-200 mt-[50px]">
+            <div className=" pt-[10px] pb-[10px] text-center">
+              <p className="bg-[#2C3753] text-[15px] text-white">DISCLAIMER : * This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+            <div className="space-y-[40px] m-auto w-max place-content-center m-auto w-max bg-gray-200 pt-[25px] pb-[50px] ">
                 <div>
                     <div className="">
                         <p className="text-[#2C3753] font-bold text-xl">Get in touch</p>
@@ -160,8 +164,8 @@ export default function Footer(){
                         10:00 AM - 8:00 PM<br/>
                         ( Sunday Closed)
                         </p>
-                        <p className="text-[#2C3753] font-bold text-xl ">Follow Us</p>
-                        <div className="flex gap-4">
+                        <p className="text-[#2C3753] font-bold text-xl mt-[25px]">Follow Us</p>
+                        <div className="flex gap-4 place-content-center">
                         <Link href="https://www.rchauhan.in">
                         <Image
                             src="/insta.png"
@@ -268,7 +272,7 @@ export default function Footer(){
                     </p>
                     <p className="text-[#2C3753] font-bold text-xl">We Accept</p>
             {/* pngs of payments */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 place-content-center">
                 <Image width={50} height={50} src='/visa.png'/>
                 <Image width={50} height={50} src='/mstro.png'/>
                 {/* <Image width={100} height={10} src='/upi.png'/> */}
@@ -278,8 +282,13 @@ export default function Footer(){
 
                 </div>
             </div>
-                
-
         </div>
+        </div>
+        </>
+
+                            
+
+
+        
     )
 }
