@@ -396,7 +396,7 @@ const Form = () => {
 
 {/* Doctor */}
 
-    <div className='mt-[70px] mb-[1 70px] max-w-800px w-max m-auto place-content-center flex'>
+    {/* <div className='mt-[70px] mb-[1 70px] max-w-800px w-max m-auto place-content-center flex'>
       <div className=''>
         <Image width={500} height={800} src="/d2.png"></Image>
         <p className='text-[#2C3753] w-max m-auto place-content-center text-4xl font-extrabold '>Dr.Suhas Sakhare</p>
@@ -409,7 +409,7 @@ const Form = () => {
 
       
     </div>
-    </div>
+    </div> */}
 
 
       {/* testimonils */}
