@@ -10,7 +10,7 @@ const items = [
     id: 6, 
     imgSrc: "/stomach.jpg", 
     title: "Digestive Disorders", 
-    description: "." 
+    description: "Stimulate Digestive enzymes to eliminate cranky vibes." 
 
   },
   { 
@@ -341,7 +341,7 @@ const Form = () => {
   {items.map((item) => (
     <div
       key={item.id}
-      className="relative aspect-[16/9] w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
+      className="hover:bg-black relative aspect-[16/9] w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
     >
       <Image
         width={250}
