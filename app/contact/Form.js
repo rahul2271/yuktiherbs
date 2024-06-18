@@ -38,7 +38,7 @@ const items = [
   { 
     id: 5, 
     imgSrc: "/liver.jpg", 
-    title: "Liver Disease", 
+    title: "Liver Disorders", 
     description: "Love your liver to live life." 
   },
   { 
