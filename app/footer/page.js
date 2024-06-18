@@ -27,7 +27,7 @@ export default function Footer(){
                         </p>
                         <p className="text-[#2C3753] font-bold text-xl">Follow Us</p>
                         <div className="flex gap-4">
-                        <Link href="https://www.rchauhan.in">
+                        <Link target="_blank" href="https://www.instagram.com/yuktiherbs/">
                         <Image
                             src="/insta.png"
                             width={30}
@@ -35,30 +35,38 @@ export default function Footer(){
                             alt="Instagram"
                         />
                         </Link>  
+                        <Link target="_blank" href="https://www.facebook.com/YuktiHerbs/">
                         <Image
                             src="/fb.png"
                             width={30}
                             height={30}
                             alt="Facebook"
                         />
+                        </Link>
+                        <Link target="_blank" href="https://www.linkedin.com/company/80111686/admin/feed/posts/">
                         <Image
                             src="/linkedin.png"
                             width={30}
                             height={30}
                             alt="Linkedin"
                         />
+                        </Link>
+                        <Link target="_blank" href="https://www.youtube.com/@Yukti_Herbs">
                         <Image
                             src="/youtube.png"
                             width={30}
                             height={30}
                             alt="Youtube"
                         />
+                        </Link>
+                        <Link target="_blank" href="https://in.pinterest.com/yuktiherbs/">
                         <Image
                             src="/pinterest.png"
                             width={30}
                             height={30}
                             alt="Pinterest"
                         />
+                        </Link>
                         </div>
 
                     </div>
@@ -166,38 +174,46 @@ export default function Footer(){
                         </p>
                         <p className="text-[#2C3753] font-bold text-xl mt-[25px]">Follow Us</p>
                         <div className="flex gap-4 place-content-center">
-                        <Link href="https://www.rchauhan.in">
+                        <Link target='_blank' href="https://www.instagram.com/yuktiherbs/">
                         <Image
                             src="/insta.png"
-                            width={25}
-                            height={25}
+                            width={30}
+                            height={30}
                             alt="Instagram"
                         />
                         </Link>  
+                        <Link target='_blank' href="https://www.facebook.com/YuktiHerbs/">
                         <Image
                             src="/fb.png"
-                            width={25}
-                            height={25}
+                            width={30}
+                            height={30}
                             alt="Facebook"
                         />
+                        </Link>
+                        <Link target='_blank' href="https://www.linkedin.com/company/80111686/admin/feed/posts/">
                         <Image
                             src="/linkedin.png"
-                            width={25}
-                            height={25}
+                            width={30}
+                            height={30}
                             alt="Linkedin"
                         />
+                        </Link>
+                        <Link target='_blank' href="https://www.youtube.com/@Yukti_Herbs">
                         <Image
                             src="/youtube.png"
-                            width={25}
-                            height={25}
+                            width={30}
+                            height={30}
                             alt="Youtube"
                         />
+                        </Link>
+                        <Link target='_blank' href="https://in.pinterest.com/yuktiherbs/">
                         <Image
                             src="/pinterest.png"
-                            width={25}
-                            height={25}
+                            width={30}
+                            height={30}
                             alt="Pinterest"
                         />
+                        </Link>
                         </div>
 
                     </div>
