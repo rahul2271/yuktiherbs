@@ -148,7 +148,7 @@ export default function Footer(){
 
         <div className="block md:hidden bg-gray-200 mt-[50px]">
             <div className=" pt-[10px] pb-[10px] text-center">
-              <p className="bg-[#2C3753] text-[15px] text-white">DISCLAIMER : * This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+              <p className="bg-[#2C3753] text-[10px] text-white">DISCLAIMER : * This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
             <div className="space-y-[40px] m-auto w-max place-content-center m-auto w-max bg-gray-200 pt-[25px] pb-[50px] ">
                 <div>
                     <div className="">
