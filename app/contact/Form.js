@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 import CallNowButton from '../call/page';
 import Link from 'next/link';
+import Doctor from '../doctor/page';
+import Slider from '../components/page';
+
+
 // import Check from './check.gif'
 // import { Menu, X, MapPin } from 'lucide-react'
 
@@ -27,7 +31,7 @@ const items = [
     description: "Eliminate stiffness to stimulate flexibility." 
 
   },
-  // Add more objects with different parameters as needed
+
   { 
     id: 10, 
     imgSrc: "/AID.jpg", 
@@ -165,7 +169,9 @@ const Form = () => {
 <title>Contact Us - Yukti Herbs</title>
         <meta name="description" content="Contact us for inquiries, feedback, or any other questions you may have." />
         <meta name="keywords" content="contact, contact us, get in touch, inquiries, feedback, support, Yukti Herbs, Dr. Suhas" />
-<img className='m-auto max-w-auto md:mt-[52px] mt-[25px]' src='./bnr.jpg'/>
+    {/* <img className='m-auto max-w-auto md:mt-[52px] mt-[25px]' src='./bnr.jpg'/> */}
+    <div className='mt-[50px]'><Slider/></div>
+    
 <div>
   <p className="text-center text-2xl font-extrabold text-[#2C3753] md:mt-[20px] md:text-6xl">Multi-Speciality Ayurveda & Panchakarma Hospital.</p>
 </div>
@@ -395,21 +401,8 @@ const Form = () => {
     </div>
 
 {/* Doctor */}
-
-    {/* <div className='mt-[70px] mb-[1 70px] max-w-800px w-max m-auto place-content-center flex'>
-      <div className=''>
-        <Image width={500} height={800} src="/d2.png"></Image>
-        <p className='text-[#2C3753] w-max m-auto place-content-center text-4xl font-extrabold '>Dr.Suhas Sakhare</p>
-        <p className='text-[#2C3753] w-max m-auto place-content-center text-xl  '>MD, PhD Ayurveda & Panchakarma Expert</p>
-
-      </div>
-      <div className=''>
-      <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Our expert Doctors. </p>
-      <p className="text-3xl font-bold text-[#2C3753] md:text-xl">Meet our qualified MD and PhD Ayurveda experts<br/> and find the right treatment.<br/> Discuss your health issues and medical history from the comfort of your place.<br/> Or visit our hospital for in-person consultation. </p>
-
-      
-    </div>
-    </div> */}
+<Doctor/>
+    
 
 
       {/* testimonils */}
@@ -425,7 +418,7 @@ const Form = () => {
       </div>
       </div>
     {/* testimonila for mobile */}
-      <div className='block mt-[30px] md:hidden place-content-center m-auto w-max'>
+      <div className='bg-[] block mt-[30px] md:hidden place-content-center m-auto w-max'>
       <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Customer Reviews </p>
       </div>
       <div className='block md:hidden mt-[10px] md:mt-[25px]  pt-[20px] pb-[20px] rounded-[20px]'>
