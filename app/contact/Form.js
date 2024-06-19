@@ -170,16 +170,16 @@ const Form = () => {
         <meta name="description" content="Contact us for inquiries, feedback, or any other questions you may have." />
         <meta name="keywords" content="contact, contact us, get in touch, inquiries, feedback, support, Yukti Herbs, Dr. Suhas" />
     {/* <img className='m-auto max-w-auto md:mt-[52px] mt-[25px]' src='./bnr.jpg'/> */}
-    <div className='mt-[50px]'><Slider/></div>
+    <div className='mt-[50px] '><Slider/></div>
     
-<div>
+{/* <div>
   <p className="text-center text-2xl font-extrabold text-[#2C3753] md:mt-[20px] md:text-6xl">Multi-Speciality Ayurveda & Panchakarma Hospital.</p>
-</div>
-<div className="mx-auto max-w-7xl px-4">
+</div> */}
+<div className=" mx-auto md:max-w-max px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">
           <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
             {/* contact from */}
-            <div className="flex items-center justify-center">
+            <div className="bg-[#2C3753]/10 rounded-[50px] shadow-lg shadow-black/50 p-6 flex items-center justify-center">
               <div className="px-2 md:px-12">
                 <p className="text-2xl font-bold text-[#2C3753] md:text-4xl">Contact Us Now</p>
                 <p className="mt-4 text-lg text-[#2C3753]">
@@ -279,7 +279,7 @@ const Form = () => {
               height={500}
               alt="Contact us"
               className="hidden max-h-full w-full rounded-lg object-cover lg:block"
-              src="/contact.jpg"
+              src="/contact3.jpg"
             />
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function Doctor(){
       <p className="place-content-center m-auto w-max text-3xl font-bold text-[#2C3753] md:text-6xl">Locate Us Here. </p>
 
           </div>
-          <p className="place-content-center m-auto w-max text-xl font-bold text-[#2C3753] md:text-5xl md:leading-10">
+          <p className="place-content-center m-auto w-max text-lg font-bold text-[#2C3753] md:text-5xl md:leading-10">
             Made with love, right here in Mohali
           </p>
           {/* <p className="max-w-4xl text-base text-gray-600 md:text-xl">
@@ -57,7 +57,7 @@ export default function Doctor(){
               className="rounded-lg"
             />
             </div>
-          <div className="space-y-6">
+          <div className="space-y-6 md:mt-[40px]">
             <p className="text-md text-[#2C3753] font-semibold md:text-base">10+ Years of Experience &rarr;</p>
             <p className="text-3xl text-[#2C3753] font-bold md:text-4xl">Dr. Suhas Sakhare</p>
             <p className="text-lg text-[#2C3753] font-bold md:text-xl">MD, Ph.D Ayurveda & Panchakarma Expert</p>
