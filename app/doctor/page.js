@@ -24,7 +24,7 @@ export default function Doctor(){
         </div>
         <div className="w-full space-y-4">
           <img
-            className="h-[200px] w-full rounded-xl object-cover md:h-full"
+            className="h-[200px] m-auto md:w-full rounded-xl object-cover md:h-full"
             src="/gps.png"
             alt=""
           />

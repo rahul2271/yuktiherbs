@@ -29,16 +29,14 @@ const Slider = () => {
     };
   }, [activeImage]);
   return (
-    <main className="grid place-items-center md:grid-cols-1 grid-cols-1 w-full mx-auto max-w-max  ">
-      <div
-        className={`w-full flex justify-center items-center gap-4 transition-transform ease-in-out duration-500 md:rounded-2xl p-6 md:p-0`}
-      >
+    <main className="grid  place-items-center md:grid-cols-1 grid-cols-1 md:w-full mx-auto md:max-w-max  ">
+      <div className={`w-full flex justify-center items-center gap-4 transition-transform ease-in-out duration-500 md:rounded-2xl  md:p-0`} >
         {images.map((elem, idx) => (
           <div
             key={idx}
             className={`${
               idx === activeImage
-                ? "block w-full h-[80vh] object-cover transition-all duration-500 ease-in-out"
+                ? "block w-full object-cover transition-all duration-500 ease-in-out"
                 : "hidden"
             }`}
           >
@@ -52,11 +50,6 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      {/* <Description
-        activeImage={activeImage}
-        clickNext={clickNext}
-        clickPrev={clickPrev}
-      /> */}
     </main>
   );
 };
