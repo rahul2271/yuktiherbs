@@ -63,7 +63,7 @@ export default function Doctor(){
             <p className="text-lg text-[#2C3753] font-bold md:text-xl">MD, Ph.D Ayurveda & Panchakarma Expert</p>
 
             <p className="text-base text-[#2C3753]/80 md:text-lg">
-            I'm an Ayurvedic Gastroenterologist making treatment breakthroughs in patient lives for over 10 years.<br/> After spending time and witnessing patient journeys,<br/> I have started putting faith and belief in the Ayurveda cause all the more than ever.
+            I am an Ayurvedic Gastroenterologist making treatment breakthroughs in patient lives for over 10 years.<br/> After spending time and witnessing patient journeys,<br/> I have started putting faith and belief in the Ayurveda cause all the more than ever.
             </p>
             <p className="text-base text-[#2C3753]/80 md:text-lg">
             <span className="text-xl text-[#2C3753] font-bold md:text-xl">My Expertise:</span><br/>
