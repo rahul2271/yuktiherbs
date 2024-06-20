@@ -178,9 +178,9 @@ const Form = () => {
 {/* <div>
   <p className="text-center text-2xl font-extrabold text-[#2C3753] md:mt-[20px] md:text-6xl">Multi-Speciality Ayurveda & Panchakarma Hospital.</p>
 </div> */}
-<div id='contact' className=" mx-auto md:max-w-max px-4">
+<div  className=" mx-auto md:max-w-max px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">
-          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
+          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-1">
            
             <div className="bg-[#2C3753]/10 rounded-[50px] shadow-lg shadow-black/50 p-6 flex items-center justify-center">
               <div className="px-2 md:px-12">
@@ -279,13 +279,13 @@ const Form = () => {
                 </form>
               </div>
             </div>
-            <Image
+            {/* <Image
               width={500}
               height={500}
               alt="Contact us"
               className="hidden max-h-full w-full rounded-lg object-cover lg:block"
               src="/contact3.jpg"
-            />
+            /> */}
           </div>
         </div>
       </div>
