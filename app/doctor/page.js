@@ -1,6 +1,7 @@
 import next from "next";
 import Link from "next/link";
 import Image from "next/image";
+import ClickableImage from "../components/ClickableImage";
 
 
 export default function Doctor(){
@@ -23,11 +24,14 @@ export default function Doctor(){
           </p> */}
         </div>
         <div className="w-full space-y-4">
-          <img
-            className="h-[200px] m-auto md:w-full rounded-xl object-cover md:h-full"
-            src="/gps.png"
-            alt=""
-          />
+        <ClickableImage 
+          href="https://www.google.com/maps/place/Yukti+Herbs+-+Ayurveda+%26+Panchakarma+Hospital/@30.6515666,76.7313662,15z/data=!4m2!3m1!1s0x0:0xaa806599b6b71417?sa=X&ved=1t:2428&ictx=111" 
+          src="/gps.jpg" 
+          alt="Example Image" 
+          width={2500} 
+          height={900} 
+        />
+
         </div>
         {/* locations */}
 
@@ -50,6 +54,7 @@ export default function Doctor(){
 
         {/* Dr. Suhas */}
         <div className="flex flex-col items-center gap-x-4 gap-y-4 py-1 md:flex-row ">
+   
             <div className="md:mt-o mt-10 w-full">
             <img
               src="./d2.png"
@@ -57,24 +62,32 @@ export default function Doctor(){
               className="rounded-lg"
             />
             </div>
-          <div className="space-y-6 md:mt-[40px]">
+            
+          <div className=" md:mt-[40px]">
             <p className="text-md text-[#2C3753] font-semibold md:text-base">10+ Years of Experience &rarr;</p>
             <p className="text-3xl text-[#2C3753] font-bold md:text-4xl">Dr. Suhas Sakhare</p>
-            <p className="text-lg text-[#2C3753] font-bold md:text-xl">MD, Ph.D Ayurveda & Panchakarma Expert</p>
+            <p className="text-lg text-[#2C3753] font-bold md:text-md">MD, Ph.D Ayurveda & Panchakarma Expert</p>
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px]">Experienced & Passionate: </p><br/>
 
-            <p className="text-base text-[#2C3753]/80 md:text-lg">
-            I am an Ayurvedic Gastroenterologist making treatment breakthroughs in patient lives for over 10 years.<br/> After spending time and witnessing patient journeys,<br/> I have started putting faith and belief in the Ayurveda cause all the more than ever.
+            <p className="text-base text-[#2C3753]/80 md:text-md">
+            AYUSH Certified, MD, PhD, DYT Ayurvedic Doctor with over a decade of experience in transforming lives through Authentic Ayurveda.<br/>A Scholar who always believed in Research Based Ayurveda, <br/>completed many case studies, published research papers in International Journals, Developed 50+ Educational Programs in<br/> last 10+ Years, Internationally Renowned Ayurvedic Vaidya with<br/> many Award-Winning Presentations on Ayurveda & Panchakarma.
             </p>
-            <p className="text-base text-[#2C3753]/80 md:text-lg">
-            <span className="text-xl text-[#2C3753] font-bold md:text-xl">My Expertise:</span><br/>
-            IBS<br/>
-            IBD<br/>
-            Liver Cirrhosis<br/>
-            Ulcerative Colitis<br/>
-            CKD<br/>
-            Hyperacidity<br/>
-            GERD, Celiac Disease<br/>
+            
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px]">Personalized Approach: </p><br/>
+            <p className="text-base text-[#2C3753]/80 md:text-md">
+            Working day & Night on Integration of age-old Ayurvedic Treatment Methodolgies with Modern Day Scientific Researches. <br/>Available for both Online/Offline Consultations to provide you a <br/>Comprehensive and Holistic Treatment Plan, which includes -<br/> Medicines, Panchakarma, Diet and Lifestyle Guidance.
             </p>
+
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px]">Expertise in: </p><br/>
+            <p className="text-base text-[#2C3753]/80 md:text-md">
+            Digestive Health (IBS, IBD, Ulcerative Colitis, CKD, Hyperacidity, GERD)<br/>
+            Skin Disorders (Psoriasis, Eczema, Vitiligo etc.)<br/>
+            Pain Management<br/>
+            Male & Female Infertility <br/>
+            Ayurvedic & Panchakarma Therapies<br/>
+            </p>
+
+            
             <button
               type="button"
               className="rounded-md bg-[#2C3753] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#2C3753]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"

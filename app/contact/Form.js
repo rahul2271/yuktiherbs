@@ -3,7 +3,8 @@ import Image from 'next/image'
 import CallNowButton from '../call/page';
 import Link from 'next/link';
 import Doctor from '../doctor/page';
-import Slider from '../components/page';
+// import Slider from '../components/page';
+import Carousel from '../components/Carousel';
 
 
 // import Check from './check.gif'
@@ -170,7 +171,9 @@ const Form = () => {
         <meta name="description" content="Contact us for inquiries, feedback, or any other questions you may have." />
         <meta name="keywords" content="contact, contact us, get in touch, inquiries, feedback, support, Yukti Herbs, Dr. Suhas" />
     {/* <img className='m-auto max-w-auto md:mt-[52px] mt-[25px]' src='./bnr.jpg'/> */}
-    <div className='mt-[15px] md:mt-[50px] '><Slider/></div>
+    {/* <div className='mt-[15px] md:mt-[50px] '><Slider/></div> */}
+    <div className='mt-[15px] md:mt-[50px] '><Carousel/></div>
+
     
 {/* <div>
   <p className="text-center text-2xl font-extrabold text-[#2C3753] md:mt-[20px] md:text-6xl">Multi-Speciality Ayurveda & Panchakarma Hospital.</p>
@@ -301,7 +304,7 @@ const Form = () => {
           <div className="py-20">
             <div className="grid grid-cols-1 gap-x-20 gap-y-8 lg:grid-cols-2">
               <div className="space-y-4">
-                <p className="w-full text-4xl font-bold text-[#2C3753]">Visit our Hospital at Address.</p>
+                <p className="w-full text-4xl font-bold text-[#2C3753]">Visit our Hospital at</p>
                 {/* <p className="w-full text-lg text-[#2C3753]">Find us at these locations.</p> */}
               </div>
               <div className="space-y-4 divide-y-2">
@@ -315,12 +318,13 @@ const Form = () => {
                     <p className="text-sm font-semibold text-[#2C3753]">{location.address}</p>
                   </div>
                 ))}
-                <div>
-                  <p className="w-full text-base  text-[#2C3753]">Contact: +91 7527869388</p>
-                  <p className="w-full text-base  text-[#2C3753]">Contact: +91 8288882923</p>
+                <div className='w-max'>
+                  <p className=" text-base  text-[#2C3753] font-bold">Contact: </p>
+                  <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923 <span className='font-bold'>|</span> +91 9875900272</p>
+                  <p className=" text-base  text-[#2C3753]"></p>
+                  <p className=" text-base  text-[#2C3753] font-bold">Email: </p>
+                  <p className=" text-base  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
-                  <p className="w-full text-base  text-[#2C3753]">Contact: +91 9875900272</p>
-                  <p className="w-full text-base  text-[#2C3753]">Email: yuktiherbs@gmail.com</p>
                 </div>
               </div>
             </div>
