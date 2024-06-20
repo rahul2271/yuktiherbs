@@ -178,15 +178,15 @@ const Form = () => {
 {/* <div>
   <p className="text-center text-2xl font-extrabold text-[#2C3753] md:mt-[20px] md:text-6xl">Multi-Speciality Ayurveda & Panchakarma Hospital.</p>
 </div> */}
-<div className=" mx-auto md:max-w-max px-4">
+<div id='contact' className=" mx-auto md:max-w-max px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">
           <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
-            {/* contact from */}
+           
             <div className="bg-[#2C3753]/10 rounded-[50px] shadow-lg shadow-black/50 p-6 flex items-center justify-center">
               <div className="px-2 md:px-12">
-                <p className="text-2xl font-bold text-[#2C3753] md:text-4xl">Contact Us Now</p>
+                <p className="text-2xl font-bold text-[#2C3753] md:text-4xl">Your First Step to a Healthy Tomorrow </p>
                 <p className="mt-4 text-lg text-[#2C3753]">
-                Our Patient Care Executives will help you.
+                Submit Your Details Now, to Get a Call Back!!!
                 </p>
 
                 <form onSubmit={handleSubmit} className="mt-8 space-y-4">
@@ -274,6 +274,8 @@ const Form = () => {
                   >
                     Send Message
                   </button>
+                  <p className="text-center mt-4 text-2xl  font-extrabold text-[#2C3753]">OR</p>
+                  <CallNowButton/>
                 </form>
               </div>
             </div>
@@ -287,7 +289,7 @@ const Form = () => {
           </div>
         </div>
       </div>
-      <CallNowButton/>
+      
 
       {/* {showTick && (
         <div className='messageok'>
@@ -320,7 +322,7 @@ const Form = () => {
                 ))}
                 <div className='hidden md:block w-max'>
                   <p className=" text-base  text-[#2C3753] font-bold">Contact: </p>
-                  <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923 <span className='font-bold'>|</span> +91 9875900272</p>
+                  <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</p><br/>
                   
                   <p className=" text-base  text-[#2C3753]"></p>
                   <p className=" text-base  text-[#2C3753] font-bold">Email: </p>
@@ -329,7 +331,7 @@ const Form = () => {
                 </div>
                 <div className='block md:hidden w-max'>
                   <p className=" text-base  text-[#2C3753] font-bold">Contact: </p>
-                  <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923 <br/><span className='font-bold'>|</span> +91 9875900272</p>
+                  <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</p> <br/>
                   
                   <p className=" text-base  text-[#2C3753]"></p>
                   <p className=" text-base  text-[#2C3753] font-bold">Email: </p>
