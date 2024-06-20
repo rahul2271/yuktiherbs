@@ -27,7 +27,7 @@ export default function Doctor(){
         <ClickableImage 
           href="https://www.google.com/maps/place/Yukti+Herbs+-+Ayurveda+%26+Panchakarma+Hospital/@30.6515666,76.7313662,15z/data=!4m2!3m1!1s0x0:0xaa806599b6b71417?sa=X&ved=1t:2428&ictx=111" 
           src="/gps.jpg" 
-          alt="Example Image" 
+          alt="Location" 
           width={2500} 
           height={900} 
         />
