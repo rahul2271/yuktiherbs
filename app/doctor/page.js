@@ -67,18 +67,18 @@ export default function Doctor(){
             <p className="text-md text-[#2C3753] font-semibold md:text-base">10+ Years of Experience &rarr;</p>
             <p className="text-3xl text-[#2C3753] font-bold md:text-4xl">Dr. Suhas Sakhare</p>
             <p className="text-lg text-[#2C3753] font-bold md:text-md">MD, Ph.D Ayurveda & Panchakarma Expert</p>
-            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px]">Experienced & Passionate: </p><br/>
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px] pt-[30px]">Experienced & Passionate: </p><br/>
 
             <p className="text-base text-[#2C3753]/80 md:text-md">
             AYUSH Certified, MD, PhD, DYT Ayurvedic Doctor with over a decade of experience in transforming lives through Authentic Ayurveda.<br/>A Scholar who always believed in Research Based Ayurveda, <br/>completed many case studies, published research papers in International Journals, Developed 50+ Educational Programs in<br/> last 10+ Years, Internationally Renowned Ayurvedic Vaidya with<br/> many Award-Winning Presentations on Ayurveda & Panchakarma.
             </p>
             
-            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px]">Personalized Approach: </p><br/>
-            <p className="text-base text-[#2C3753]/80 md:text-md">
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px] pt-[20px]">Personalized Approach: </p><br/>
+            <p className="text-base text-[#2C3753]/80  md:text-md">
             Working day & Night on Integration of age-old Ayurvedic Treatment Methodolgies with Modern Day Scientific Researches. <br/>Available for both Online/Offline Consultations to provide you a <br/>Comprehensive and Holistic Treatment Plan, which includes -<br/> Medicines, Panchakarma, Diet and Lifestyle Guidance.
             </p>
 
-            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px]">Expertise in: </p><br/>
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[40px] pt-[20px]">Expertise in: </p><br/>
             <p className="text-base text-[#2C3753]/80 md:text-md">
             Digestive Health (IBS, IBD, Ulcerative Colitis, CKD, Hyperacidity, GERD)<br/>
             Skin Disorders (Psoriasis, Eczema, Vitiligo etc.)<br/>
