@@ -318,9 +318,19 @@ const Form = () => {
                     <p className="text-sm font-semibold text-[#2C3753]">{location.address}</p>
                   </div>
                 ))}
-                <div className='w-max'>
+                <div className='hidden md:block w-max'>
                   <p className=" text-base  text-[#2C3753] font-bold">Contact: </p>
                   <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923 <span className='font-bold'>|</span> +91 9875900272</p>
+                  
+                  <p className=" text-base  text-[#2C3753]"></p>
+                  <p className=" text-base  text-[#2C3753] font-bold">Email: </p>
+                  <p className=" text-base  text-[#2C3753]">yuktiherbs@gmail.com</p>
+
+                </div>
+                <div className='block md:hidden w-max'>
+                  <p className=" text-base  text-[#2C3753] font-bold">Contact: </p>
+                  <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923 <br/><span className='font-bold'>|</span> +91 9875900272</p>
+                  
                   <p className=" text-base  text-[#2C3753]"></p>
                   <p className=" text-base  text-[#2C3753] font-bold">Email: </p>
                   <p className=" text-base  text-[#2C3753]">yuktiherbs@gmail.com</p>
