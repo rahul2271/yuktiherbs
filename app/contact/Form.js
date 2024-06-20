@@ -172,20 +172,20 @@ const Form = () => {
         <meta name="keywords" content="contact, contact us, get in touch, inquiries, feedback, support, Yukti Herbs, Dr. Suhas" />
     {/* <img className='m-auto max-w-auto md:mt-[52px] mt-[25px]' src='./bnr.jpg'/> */}
     {/* <div className='mt-[15px] md:mt-[50px] '><Slider/></div> */}
-    <div className='mt-[15px] md:mt-[50px] '><Carousel/></div>
+    <div className=' mt-[15px] md:mt-[50px] '><Carousel/></div>
 
     
 {/* <div>
   <p className="text-center text-2xl font-extrabold text-[#2C3753] md:mt-[20px] md:text-6xl">Multi-Speciality Ayurveda & Panchakarma Hospital.</p>
 </div> */}
-<div  className=" mx-auto md:max-w-max px-4">
+<div className=" mx-auto md:max-w-max px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">
           <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-1">
            
             <div className="bg-[#2C3753]/10 rounded-[50px] shadow-lg shadow-black/50 p-6 flex items-center justify-center">
               <div className="px-2 md:px-12">
                 <p className="text-2xl font-bold text-[#2C3753] md:text-4xl">Your First Step to a Healthy Tomorrow </p>
-                <p className="mt-4 text-lg text-[#2C3753]">
+                <p className="text-center mt-4 text-lg text-[#2C3753]">
                 Submit Your Details Now, to Get a Call Back!!!
                 </p>
 
@@ -270,7 +270,7 @@ const Form = () => {
                   </div>
                   <button
                     type="submit"
-                    className="w-full rounded-md bg-[#2C3753] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    className="w-full rounded-md bg-[#2C3753] px-3 py-2 text-sm text-[#ffdd00] font-semibold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   >
                     Send Message
                   </button>
@@ -317,24 +317,24 @@ const Form = () => {
                   >
                     {/* <p className="w-full text-xl font-semibold  text-[#2C3753]">{location.title}</p> */}
                     {/* <p className="w-full text-base  text-[#2C3753]">{location.timings}</p> */}
-                    <p className="text-sm font-semibold text-[#2C3753]">{location.address}</p>
+                    <p className="text-xl font-semibold text-[#2C3753]">{location.address}</p>
                   </div>
                 ))}
                 <div className='hidden md:block w-max'>
-                  <p className=" text-base  text-[#2C3753] font-bold">Contact: </p>
+                  <p className=" text-xl  text-[#2C3753] font-bold">Contact: </p>
                   <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</p><br/>
                   
                   <p className=" text-base  text-[#2C3753]"></p>
-                  <p className=" text-base  text-[#2C3753] font-bold">Email: </p>
+                  <p className=" text-xl  text-[#2C3753] font-bold">Email: </p>
                   <p className=" text-base  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
                 </div>
                 <div className='block md:hidden w-max'>
-                  <p className=" text-base  text-[#2C3753] font-bold">Contact: </p>
+                  <p className=" text-lg  text-[#2C3753] font-bold">Contact: </p>
                   <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</p> <br/>
                   
                   <p className=" text-base  text-[#2C3753]"></p>
-                  <p className=" text-base  text-[#2C3753] font-bold">Email: </p>
+                  <p className=" text-lg  text-[#2C3753] font-bold">Email: </p>
                   <p className=" text-base  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
                 </div>

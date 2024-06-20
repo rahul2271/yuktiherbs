@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from './Carousel.module.css';
+// import styles from './Carousel.module.css';
 
 const Carousel = () => {
   const settings = {
@@ -17,13 +17,13 @@ const Carousel = () => {
   };
 
   return (
-    <div className={styles.carousel}>
+    <div >
       <Slider {...settings}>
         <div>
-          <img src="./bnr.jpg" alt="Slide 1" className={styles.slideImage} />
+          <img src="./bnr.jpg" alt="Slide 1"  />
         </div>
         <div>
-          <img src="./bnr1.jpg" alt="Slide 2" className={styles.slideImage} />
+          <img src="./bnr1.jpg" alt="Slide 2" />
         </div>
         {/* <div>
           <img src="/images/slide3.jpg" alt="Slide 3" className={styles.slideImage} />
