@@ -7,7 +7,7 @@ import ClickableImage from "../components/ClickableImage";
 export default function Doctor(){
     return(
         <>
-           <div className="mx-auto max-w-7xl px-4">
+           <div className="mx-auto max-w-max  px-4">
         {/* Hero Map */}
         <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">
           <div className="max-w-max bg-gray-50 place-content-center m-auto">
@@ -54,7 +54,7 @@ export default function Doctor(){
         {/* TEAM */}
 
         {/* Dr. Suhas */}
-        <div className="flex flex-col items-center gap-x-4 gap-y-4 py-1 md:flex-row ">
+        <div className="md:mt-[80px] bg-[#e7f0f7] flex flex-col items-center gap-x-4 gap-y-4 py-1 md:flex-row ">
    
             <div className="md:mt-o mt-10 w-full">
             <img

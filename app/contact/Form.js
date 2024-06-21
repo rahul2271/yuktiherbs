@@ -172,7 +172,7 @@ const Form = () => {
         <meta name="keywords" content="contact, contact us, get in touch, inquiries, feedback, support, Yukti Herbs, Dr. Suhas" />
     {/* <img className='m-auto max-w-auto md:mt-[52px] mt-[25px]' src='./bnr.jpg'/> */}
     {/* <div className='mt-[15px] md:mt-[50px] '><Slider/></div> */}
-    <div className=' mt-[15px] md:mt-[50px] '><Carousel/></div>
+    <div className=' mt-[15px] md:mt-[50px]  '><Carousel/></div>
 
     
 {/* <div>
@@ -180,16 +180,16 @@ const Form = () => {
 </div> */}
 <div className=" mx-auto md:max-w-max px-4">
         <div className=" mx-auto max-w-7xl py-12 md:py-24">
-          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
+          <div className="bg-[#e7f0f7] rounded-[25px] grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
            
-            <div className=" bg-[#2C3753]/10 rounded-[50px] shadow-lg shadow-black/50 p-6 flex items-center justify-center">
+            <div className=" bg-[#e7f0f7] rounded-[10px] shadow-black/50 p-6 flex items-center justify-center">
               <div className="px-2 md:px-12">
-                <p className="text-2xl font-bold text-[#2C3753] md:text-4xl">Your First Step to a Healthy Tomorrow </p>
-                <p className="text-center mt-4 text-lg text-[#2C3753]">
+                <p className="text-center text-2xl font-bold text-[#2C3753] md:text-4xl">Your First Step to a Healthy Tomorrow </p>
+                <p className="font-bold text-center mt-4 text-lg text-[#2C3753]">
                 Submit Your Details Now, to Get a Call Back!!!
                 </p>
 
-                <form onSubmit={handleSubmit} className=" mt-8 space-y-4">
+                <form onSubmit={handleSubmit} className="item-center mt-8 space-y-4">
                   <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                     <div className="grid w-full  items-center gap-1.5">
                       <label
@@ -199,7 +199,7 @@ const Form = () => {
                         Full Name
                       </label>
                       <input
-                        className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                        className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                         type="text"
                         id="fullName"
                         name="fullName"
@@ -219,7 +219,7 @@ const Form = () => {
                       Email
                     </label>
                     <input
-                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                       type="text"
                       id="gmail"
                       name="gmail"
@@ -237,7 +237,7 @@ const Form = () => {
                       Phone number
                     </label>
                     <input
-                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                       type="tel"
                       id="basic-url"
                       aria-describedby="basic-addon3 basic-addon4"
@@ -257,7 +257,7 @@ const Form = () => {
                       What problem you are facing?
                     </label>
                     <textarea
-                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                       id="query"
                       name="query"
                       aria-describedby="basic-addon3 basic-addon4"
@@ -268,24 +268,31 @@ const Form = () => {
                       cols={3}
                     />
                   </div>
+                  <div className='justify-item-center'>
                   <button
                     type="submit"
-                    className="w-full rounded-md bg-[#2C3753] px-3 py-2 text-sm text-[#ffdd00] font-semibold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    className="w-full rounded-md bg-[#577cae] px-3 py-2 text-sm font-bold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   >
-                    Send Message
+                    Submit
                   </button>
+                  </div>
                   <p className="text-center mt-4 text-2xl  font-extrabold text-[#2C3753]">OR</p>
                   <CallNowButton/>
                 </form>
               </div>
             </div>
-            <Image
+            <img
+              alt="Contact us"
+              className="hidden max-h-[640px] w-full rounded-lg object-cover lg:block"
+              src="./aaa.jpg"
+            />
+            {/* <Image
               width={500}
               height={500}
               alt="Contact us"
               className="hidden max-h-full w-full rounded-lg object-cover lg:block"
               src="/contact3.jpg"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -355,7 +362,8 @@ const Form = () => {
 
 
 {/* Conditions we treat for desktop */}
-    <div className='mt-[50px] hidden md:block place-content-center m-auto w-max'>
+<div className='bg-[#e7f0f7]'>
+    <div className='pt-[50px] hidden md:block place-content-center m-auto w-max'>
       <p className="text-2xl font-bold text-[#2C3753] md:text-6xl">Conditions We Treat. </p>
     </div>
     <div className='hidden md:block'>
@@ -383,6 +391,7 @@ const Form = () => {
   ))}
 </div>
     </div>
+</div>
 
 
 
@@ -455,3 +464,95 @@ const Form = () => {
 };
 
 export default Form;
+
+
+                {/* <form onSubmit={handleSubmit} className="item-center mt-8 space-y-4">
+  <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
+    <div className="grid w-full items-center gap-1.5">
+      <label
+        className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        htmlFor="fullName"
+      >
+        Full Name
+      </label>
+      <input
+        className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+        type="text"
+        id="fullName"
+        name="fullName"
+        aria-describedby="basic-addon3 basic-addon4"
+        placeholder="Rajesh Kumar"
+        value={formData.fullName}
+        onChange={handleChange}
+        required
+      />
+    </div>
+  </div>
+  <div className="grid w-full items-center gap-1.5">
+    <label
+      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      htmlFor="gmail"
+    >
+      Email
+    </label>
+    <input
+      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+      type="text"
+      id="gmail"
+      name="gmail"
+      aria-describedby="basic-addon3 basic-addon4"
+      placeholder="example@gmail.com"
+      value={formData.gmail}
+      onChange={handleChange}
+      required
+    />
+  </div>
+  <div className="grid w-full items-center gap-1.5">
+    <label
+      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      For="basic-url"
+    >
+      Phone number
+    </label>
+    <input
+      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+      type="tel"
+      id="basic-url"
+      aria-describedby="basic-addon3 basic-addon4"
+      required
+      placeholder="8888XXXXXX"
+      name="number"
+      value={formData.number}
+      onChange={handleChange}
+    />
+  </div>
+  <div className="grid w-full items-center gap-1.5">
+    <label
+      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      htmlFor="query"
+    >
+      What problem you are facing?
+    </label>
+    <textarea
+      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+      id="query"
+      name="query"
+      aria-describedby="basic-addon3 basic-addon4"
+      placeholder="Your Health Issue!"
+      value={formData.query}
+      onChange={handleChange}
+      required
+      cols={3}
+    />
+  </div>
+  <div className="w-full flex justify-center">
+    <button
+      type="submit"
+      className="w-[200px] rounded-md bg-[#c7a03b] px-3 py-2 text-sm font-bold text-[#2C3753] shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+    >
+      Submit
+    </button>
+  </div>
+  <p className="text-center mt-4 text-2xl font-extrabold text-[#2C3753]">OR</p>
+  <CallNowButton />
+                </form> */}
