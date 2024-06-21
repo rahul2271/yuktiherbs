@@ -179,17 +179,17 @@ const Form = () => {
   <p className="text-center text-2xl font-extrabold text-[#2C3753] md:mt-[20px] md:text-6xl">Multi-Speciality Ayurveda & Panchakarma Hospital.</p>
 </div> */}
 <div className=" mx-auto md:max-w-max px-4">
-        <div className="mx-auto max-w-7xl py-12 md:py-24">
-          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-1">
+        <div className=" mx-auto max-w-7xl py-12 md:py-24">
+          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
            
-            <div className="bg-[#2C3753]/10 rounded-[50px] shadow-lg shadow-black/50 p-6 flex items-center justify-center">
+            <div className=" bg-[#2C3753]/10 rounded-[50px] shadow-lg shadow-black/50 p-6 flex items-center justify-center">
               <div className="px-2 md:px-12">
                 <p className="text-2xl font-bold text-[#2C3753] md:text-4xl">Your First Step to a Healthy Tomorrow </p>
                 <p className="text-center mt-4 text-lg text-[#2C3753]">
                 Submit Your Details Now, to Get a Call Back!!!
                 </p>
 
-                <form onSubmit={handleSubmit} className="mt-8 space-y-4">
+                <form onSubmit={handleSubmit} className=" mt-8 space-y-4">
                   <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                     <div className="grid w-full  items-center gap-1.5">
                       <label
@@ -279,13 +279,13 @@ const Form = () => {
                 </form>
               </div>
             </div>
-            {/* <Image
+            <Image
               width={500}
               height={500}
               alt="Contact us"
               className="hidden max-h-full w-full rounded-lg object-cover lg:block"
               src="/contact3.jpg"
-            /> */}
+            />
           </div>
         </div>
       </div>
@@ -427,10 +427,10 @@ const Form = () => {
       </div>
       <div className='hidden md:block md:mt-[25px]  pt-[20px] pb-[20px] rounded-[50px]'>
       <div className='flex place-content-center m-auto gap-[25px] max-w-[800px]   '>
-      <iframe className='rounded-[20px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/6LTJkagsrOw?si=NpvPRJRq0j57XoFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe className='rounded-[20px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/5NAFeDSzYr4?si=MdBySheMmCZalbjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe className='rounded-[20px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/Ha42TcpyHTA?si=EvrZRlHBMGt3U_Fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe className='rounded-[20px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/OVi0KYfzcbg?si=LoLyNCH3Bihwxu7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-[20px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/rYQ5SkH4GhU?si=KXyqpaF_X2__vxSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-[20px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/ZHQUJj8HRW8?si=Z77O1qUlQaYXfwvd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-[20px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/eIZQf_APSOY?si=-HkyGSSaQ7wA8Bel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-[20px] border-[2px] border-[#2C3753]' width="560" height="315" src="https://www.youtube.com/embed/Bo0sIdX0dJ0?si=DOMZ5JxeocEqgu61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       </div>
     {/* testimonila for mobile */}
@@ -439,10 +439,10 @@ const Form = () => {
       </div>
       <div className='block md:hidden mt-[10px] md:mt-[25px]  pt-[20px] pb-[20px] rounded-[20px]'>
       <div className=' place-content-center w-max m-auto   '>
-      <iframe className='rounded-[20px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/6LTJkagsrOw?si=NpvPRJRq0j57XoFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe className='rounded-[20px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/5NAFeDSzYr4?si=MdBySheMmCZalbjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe className='rounded-[20px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/Ha42TcpyHTA?si=EvrZRlHBMGt3U_Fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe className='rounded-[20px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/OVi0KYfzcbg?si=LoLyNCH3Bihwxu7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-[20px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/rYQ5SkH4GhU?si=KXyqpaF_X2__vxSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-[20px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/ZHQUJj8HRW8?si=Z77O1qUlQaYXfwvd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-[20px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/eIZQf_APSOY?si=-HkyGSSaQ7wA8Bel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-[20px] border-[2px] border-[#2C3753] mb-[30px]' width="300" height="210" src="https://www.youtube.com/embed/Bo0sIdX0dJ0?si=DOMZ5JxeocEqgu61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       </div>
       {/* More button */}
