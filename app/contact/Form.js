@@ -288,7 +288,7 @@ const Form = () => {
                   <div className='justify-item-center'>
                   <button
                     type="submit"
-                    className="w-full rounded-[50px] bg-[#2C3753] px-4 py-3 text-sm font-bold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    className="hover:bg-[#ffdd00] hover:text-[#2C3753] bg-[#2C3753] w-full rounded-[50px] px-4 py-3 text-sm font-bold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   >
                     Submit
                   </button>

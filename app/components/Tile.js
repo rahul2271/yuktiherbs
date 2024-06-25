@@ -19,7 +19,7 @@ import Image from 'next/image';
 
 const Tile = ({ iconSrc, title, description, bgColorClass, borderColorClass }) => {
   return (
-    <div className={`${bgColorClass} ${borderColorClass} text-center p-5 rounded-lg flex flex-col items-center w-full border-2`}>
+    <div className={`${bgColorClass} ${borderColorClass} transform transition-transform duration-300 hover:-translate-y-4 hover:shadow-lg text-center p-5 rounded-lg flex flex-col items-center w-full border-2`}>
       <div className="p-4 border-2 rounded-full border-current">
         <Image src={iconSrc} alt={title} width={64} height={64} />
       </div>
