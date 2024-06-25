@@ -333,35 +333,42 @@ const Form = () => {
                 <p className="w-full text-6xl font-bold text-[#2C3753]">Visit our<br/> <span>Hospital at</span> </p>
                 {/* <p className="w-full text-lg text-[#2C3753]">Find us at these locations.</p> */}
               </div>
-<div className="space-y-4 divide-y-2">
-  <div className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full">
-    <div className='flex gap-x-4 '>
-      <img className='w-[35px] h-[40px]' src='/location.png' alt='Location'/>
-      <p className="text-lg font-normal text-[#2C3753]">
-        Plot. 956, Sector 82, JLPL Industrial <br/>
-        Area, Mohali, Punjab 140306 IN
-      </p>
-    </div>
-  </div>
+              <div className="space-y-4 divide-y-2">
+                
+                  <div className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full">
+                    {/* <p className="w-full text-xl font-semibold  text-[#2C3753]">{location.title}</p> */}
+                    {/* <p className="w-full text-base  text-[#2C3753]">{location.timings}</p> */}
+                    <div className='flex gap-x-4 '>
+                      <img className='w-[30px] h-[40px]' src='./Location.png'/>
+                    <p className="text-lg font-normal text-[#2C3753]">Plot. 956, Sector 82, JLPL Industrial <br/>
+                    Area, Mohali, Punjab 140306 IN</p>
+                    </div>
+                  </div>
+                
+                <div className='flex gap-x-4'>
+                  <img className='w-[40px] h-[40px]' src='./Phone.png'/>
+                  <p className="text-lg font-normal text-[#2C3753]">+91 7527869388 | +91 8288882923</p>
+                  {/* <span className=" text-xl  text-[#2C3753] font-bold"> <span className='font-light'>  <span className='font-bold'>|</span> </span> </span> */}
+                  {/* <div className=" flex text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</div><br/> */}
+                </div>
+                <div className='flex gap-x-4'>
+                <img className='w-[40px] h-[30px]' src='./Gmail.png'/>
 
-  <div className='flex gap-x-4'>
-    <img className='w-[40px] h-[40px]' src='/Phone.png' alt='Phone'/>
-    <p className="text-lg font-normal text-[#2C3753]">+91 7527869388 | +91 8288882923</p>
-  </div>
+                  {/* <p className=" text-base  text-[#2C3753]"></p> */}
+                  {/* <p className=" text-xl  text-[#2C3753] "></p> */}
+                  <p className=" text-base text-lg  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
-  <div className='flex gap-x-4'>
-    <img className='w-[40px] h-[30px]' src='/Gmail.png' alt='Email'/>
-    <p className="text-lg font-normal text-[#2C3753]">yuktiherbs@gmail.com</p>
-  </div>
+                </div>
+                <div className='block md:hidden w-auto'>
+                  <p className=" text-lg  text-[#2C3753] font-bold">Contact: </p>
+                  <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</p> <br/>
+                  
+                  <p className=" text-base  text-[#2C3753]"></p>
+                  <p className=" text-lg  text-[#2C3753] font-bold">Email: </p>
+                  <p className=" text-base  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
-  <div className='block md:hidden w-auto'>
-    <p className="text-lg text-[#2C3753] font-bold">Contact: </p>
-    <p className="text-base text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</p><br/>
-    <p className="text-lg text-[#2C3753] font-bold">Email: </p>
-    <p className="text-base text-[#2C3753]">yuktiherbs@gmail.com</p>
-  </div>
-</div>
-
+                </div>
+              </div>
             </div>
           </div>
         </div>
