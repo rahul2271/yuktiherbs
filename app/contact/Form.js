@@ -5,6 +5,22 @@ import Link from 'next/link';
 import Doctor from '../doctor/page';
 // import Slider from '../components/page';
 import Carousel from '../components/Carousel';
+// import Head from 'next/head';
+import Tile from '../components/Tile';
+// import styles from '../styles/Home.module.css';
+
+const tilesData = [
+  { id: 1, iconSrc: '/Digestive.png', title: 'Digestive Disorders', description: 'Stimulate Digestive enzymes to eliminate cranky vibes' },
+  { id: 2, iconSrc: '/Skin.png', title: 'Skin Disorders', description: 'Skin shine and all fine.' },
+  { id: 3, iconSrc: '/Joint.png', title: 'Joint Disorders', description: 'Eliminate stiffness to stimulate flexibility.' },
+  { id: 4, iconSrc: '/Immune.png', title: 'Auto-Immune Disorders', description: 'Build internal army to fight internal unseen invaders. ' },
+  { id: 5, iconSrc: '/Liver.png', title: 'Liver Disorders', description: 'Love your liver to live life.' },
+  { id: 6, iconSrc: '/Kidney.png', title: 'Kidney Disorders', description: 'Restore Kidney function to hit back kidney failure.' },
+  { id: 7, iconSrc: '/Heart.png', title: 'Heart Disorders', description: 'Defeat disease to healthy beat.' },
+  { id: 8, iconSrc: '/Respiratory.png', title: 'Respiratory Disorders', description: 'Breathe with ease, Feel comfortable.' },
+  { id: 9, iconSrc: '/Malefemale.png', title: 'Male & Female Infertility', description: 'Happy you and Happy us.' },
+  { id: 10, iconSrc: '/Brain.png', title: 'Brain Disorders', description: 'The complexities of brain disorders and care strategies.' },
+];
 
 
 // import Check from './check.gif'
@@ -13,7 +29,7 @@ import Carousel from '../components/Carousel';
 const items = [
   { 
     id: 6, 
-    imgSrc: "/stomach.jpg", 
+    imgSrc: "/Digestive.png", 
     title: "Digestive Disorders", 
     description: "Stimulate Digestive enzymes to eliminate cranky vibes." 
 
@@ -180,16 +196,17 @@ const Form = () => {
 </div> */}
 <div className=" mx-auto md:max-w-max px-4">
         <div className=" mx-auto max-w-7xl py-12 md:py-24">
-          <div className="bg-[#e7f0f7] rounded-[25px] grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
+          <div className="border-2 rounded-[25px] grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
            
-            <div className=" bg-[#e7f0f7] rounded-[10px] shadow-black/50 p-6 flex items-center justify-center">
+            <div className="  rounded-[10px] shadow-black/50 p-6 flex items-center justify-center">
               <div className="px-2 md:px-12">
-                <p className="text-center text-2xl font-bold text-[#2C3753] md:text-4xl">Your First Step to a Healthy Tomorrow </p>
-                <p className="font-bold text-center mt-4 text-lg text-[#2C3753]">
+                <p className="text-left text-2xl font-bold text-[#2C3753] md:text-xl">Your First Step to a Healthy Tomorrow </p>
+                <p className="font-light text-left mt-4 text-lg md:text-sm text-[#2C3753]">
                 Submit Your Details Now, to Get a Call Back!!!
                 </p>
 
                 <form onSubmit={handleSubmit} className="item-center mt-8 space-y-4">
+                  <div></div>
                   <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                     <div className="grid w-full  items-center gap-1.5">
                       <label
@@ -271,20 +288,20 @@ const Form = () => {
                   <div className='justify-item-center'>
                   <button
                     type="submit"
-                    className="w-full rounded-md bg-[#577cae] px-3 py-2 text-sm font-bold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    className="w-full rounded-[50px] bg-[#2C3753] px-4 py-3 text-sm font-bold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   >
                     Submit
                   </button>
                   </div>
-                  <p className="text-center mt-4 text-2xl  font-extrabold text-[#2C3753]">OR</p>
+                  <p className="text-center mt-4 text-xl  font-bold text-[#2C3753]">OR</p>
                   <CallNowButton/>
                 </form>
               </div>
             </div>
             <img
               alt="Contact us"
-              className="hidden max-h-[640px] w-full rounded-lg object-cover lg:block"
-              src="./aaa.jpg"
+              className="hidden  max-h-[640px] w-full rounded-lg object-cover lg:block"
+              src="./fff.jpg"
             />
             {/* <Image
               width={500}
@@ -308,32 +325,38 @@ const Form = () => {
 
 
 {/* Our Hospital */}
-<div className="rounded-lg bg-mypurple">
+<div className="hidden md:block rounded-lg bg-mypurple">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="py-20">
             <div className="grid grid-cols-1 gap-x-20 gap-y-8 lg:grid-cols-2">
               <div className="space-y-4">
-                <p className="w-full text-4xl font-bold text-[#2C3753]">Visit our Hospital at</p>
+                <p className="w-full text-6xl font-bold text-[#2C3753]">Visit our<br/> <span>Hospital at</span> </p>
                 {/* <p className="w-full text-lg text-[#2C3753]">Find us at these locations.</p> */}
               </div>
               <div className="space-y-4 divide-y-2">
-                {locations.map((location) => (
-                  <div
-                    key={location.title}
-                    className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full"
-                  >
+                
+                  <div className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full">
                     {/* <p className="w-full text-xl font-semibold  text-[#2C3753]">{location.title}</p> */}
                     {/* <p className="w-full text-base  text-[#2C3753]">{location.timings}</p> */}
-                    <p className="text-xl font-semibold text-[#2C3753]">{location.address}</p>
+                    <div className='flex gap-x-4 '>
+                      <img className='w-[30px] h-[40px]' src='./location.png'/>
+                    <p className="text-lg font-normal text-[#2C3753]">Plot. 956, Sector 82, JLPL Industrial <br/>
+                    Area, Mohali, Punjab 140306 IN</p>
+                    </div>
                   </div>
-                ))}
-                <div className='hidden md:block w-max'>
-                  <p className=" text-xl  text-[#2C3753] font-bold">Contact: </p>
-                  <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</p><br/>
-                  
-                  <p className=" text-base  text-[#2C3753]"></p>
-                  <p className=" text-xl  text-[#2C3753] font-bold">Email: </p>
-                  <p className=" text-base  text-[#2C3753]">yuktiherbs@gmail.com</p>
+                
+                <div className='flex gap-x-4'>
+                  <img className='w-[40px] h-[40px]' src='./Phone.png'/>
+                  <p className="text-lg font-normal text-[#2C3753]">+91 7527869388 | +91 8288882923</p>
+                  {/* <span className=" text-xl  text-[#2C3753] font-bold"> <span className='font-light'>  <span className='font-bold'>|</span> </span> </span> */}
+                  {/* <div className=" flex text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</div><br/> */}
+                </div>
+                <div className='flex gap-x-4'>
+                <img className='w-[40px] h-[30px]' src='./Gmail.png'/>
+
+                  {/* <p className=" text-base  text-[#2C3753]"></p> */}
+                  {/* <p className=" text-xl  text-[#2C3753] "></p> */}
+                  <p className=" text-base text-lg  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
                 </div>
                 <div className='block md:hidden w-max'>
@@ -345,6 +368,47 @@ const Form = () => {
                   <p className=" text-base  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div className="block md:hidden rounded-lg bg-mypurple">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="py-20">
+            <div className="grid grid-cols-1 gap-x-20 gap-y-8 lg:grid-cols-2">
+              <div className="space-y-4">
+                <p className="w-full text-4xl font-bold text-[#2C3753]">Visit our<br/> <span>Hospital at</span> </p>
+                {/* <p className="w-full text-lg text-[#2C3753]">Find us at these locations.</p> */}
+              </div>
+              <div className="space-y-4 divide-y-2">
+                
+                  <div className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full">
+                    {/* <p className="w-full text-xl font-semibold  text-[#2C3753]">{location.title}</p> */}
+                    {/* <p className="w-full text-base  text-[#2C3753]">{location.timings}</p> */}
+                    <div className='flex gap-x-4 '>
+                      <img className='w-[15px] h-[20px]' src='./location.png'/>
+                    <p className="text-[12px] font-normal text-[#2C3753]">Plot. 956, Sector 82, JLPL Industrial <br/>
+                    Area, Mohali, Punjab 140306 IN</p>
+                    </div>
+                  </div>
+                
+                <div className='flex gap-x-4'>
+                  <img className='w-[15px] h-[20px]' src='./Phone.png'/>
+                  <p className="text-[12px] font-normal text-[#2C3753]">+91 7527869388 | +91 8288882923</p>
+                  {/* <span className=" text-xl  text-[#2C3753] font-bold"> <span className='font-light'>  <span className='font-bold'>|</span> </span> </span> */}
+                  {/* <div className=" flex text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</div><br/> */}
+                </div>
+                <div className='flex gap-x-4'>
+                <img className='w-[18px] h-[15px]' src='./Gmail.png'/>
+
+                  {/* <p className=" text-base  text-[#2C3753]"></p> */}
+                  {/* <p className=" text-[12px]  text-[#2C3753] ">Email: </p> */}
+                  <p className="  text-[12px]  text-[#2C3753]">yuktiherbs@gmail.com</p>
+
+                </div>
+
               </div>
             </div>
           </div>
@@ -362,28 +426,30 @@ const Form = () => {
 
 
 {/* Conditions we treat for desktop */}
-<div className='bg-[#e7f0f7]'>
+{/* <div className='bg-[#2C3753] rounded-[50px]'>
     <div className='pt-[50px] hidden md:block place-content-center m-auto w-max'>
-      <p className="text-2xl font-bold text-[#2C3753] md:text-6xl">Conditions We Treat. </p>
+      <p className="text-2xl font-bold text-white md:text-6xl">Conditions We Treat. </p>
     </div>
     <div className='hidden md:block'>
-    <div className="mx-auto grid w-full max-w-7xl items-center  px-2 py-10 grid-cols-5 gap-6">
+    <div className=" mx-auto grid w-full max-w-7xl items-center  px-2 py-10 grid-cols-5 gap-6">
   {items.map((item) => (
     <div
       key={item.id}
-      className="hover:bg-black relative aspect-[16/9] w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
+      className=" relative aspect-[16/9] w-auto rounded-md md:aspect-auto md:h-[250px] md:w-[250px]"
     >
       <Image
-        width={250}
-        height={250}
+        width={50}
+        height={50}
         src={item.imgSrc}
         alt={item.title}
-        className="z-0 h-full w-full rounded-md object-cover"
+        className=" border-1 border-black z-0 h-[50px] w-[50px]  "
       />
-      <div className="absolute inset-0 rounded-md bg-gradient-to-t from-[#2C3753] to-transparent"></div>
+   
+      <div className="rounded-tr-[50px] rounded-bl-[50px]   absolute inset-0 rounded-md bg-black opacity-50 "></div>
+      
       <div className="absolute bottom-4 left-4 text-left">
         <h1 className="text-2xl font-semibold text-white">{item.title}</h1>
-        <p className="mt-2 text-[15px] text-gray-300">
+        <p className="mt-2 text-[15px] text-gray-100">
           {item.description}
         </p>
       </div>
@@ -391,7 +457,29 @@ const Form = () => {
   ))}
 </div>
     </div>
+</div> */}
+<div className='md:block hidden rounded-[50px] bg-[#2C3753]'>
+<div className=' mx-auto w-max  item-center'>
+<main className="flex flex-col  max-w-7xl items-center justify-center min-h-screen">
+        <div className=" grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5 w-full">
+          {tilesData.map((tile, index) => (
+            <Tile 
+              className='border-2 border-white'
+              key={tile.id} 
+              iconSrc={tile.iconSrc} 
+              title={tile.title} 
+              description={tile.description}
+              bgColorClass={index % 2 === 0 ? 'bg-[#2C3753] text-white' : 'bg-white text-[#2C3753]'}
+              borderColorClass={index % 2 === 0 ? 'border-white' : 'border-[#2C3753]'}
+            />
+          ))}
+        </div>
+      </main>
+      </div>
+
 </div>
+
+
 
 
 

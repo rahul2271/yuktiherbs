@@ -28,7 +28,7 @@ export default function Doctor(){
           href="https://www.google.com/maps/place/Yukti+Herbs+-+Ayurveda+%26+Panchakarma+Hospital/@30.6515666,76.7313662,15z/data=!4m2!3m1!1s0x0:0xaa806599b6b71417?sa=X&ved=1t:2428&ictx=111" 
           src="/gps.jpg" 
           alt="Location" 
-          width={2500} 
+          width={1500} 
           height={900} 
         />
         
@@ -54,17 +54,17 @@ export default function Doctor(){
         {/* TEAM */}
 
         {/* Dr. Suhas */}
-        <div className="md:mt-[80px] bg-[#e7f0f7] flex flex-col items-center gap-x-4 gap-y-4 py-1 md:flex-row ">
+        <div className=" rounded-[25px] md:mt-[80px] max-w-7xl m-auto mt-[50px] md:border-2 border-black/10 place-content-center  flex flex-col items-center gap-x-4 gap-y-4 py-1 md:flex-row ">
    
-            <div className="md:mt-o mt-10 w-full">
+            <div className="  w-full">
             <img
-              src="./d2.png"
+              src="./Doctorbg.png"
               alt="Getting Started"
               className="rounded-lg"
             />
             </div>
             
-          <div className=" md:mt-[40px]">
+          <div className="">
             {/* <p className="text-md text-[#2C3753] font-semibold md:text-base">10+ Years of Experience &rarr;</p> */}
             <p className="text-3xl text-[#2C3753] font-bold md:text-4xl">Dr. Suhas Sakhare</p>
             <p className="text-lg text-[#2C3753] font-bold md:text-md">MD, Ph.D Ayurveda & Panchakarma Expert</p>
