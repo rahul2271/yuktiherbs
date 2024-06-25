@@ -389,14 +389,14 @@ const Form = () => {
                     {/* <p className="w-full text-base  text-[#2C3753]">{location.timings}</p> */}
                     <div className='flex gap-x-4 '>
                       <img className='w-[15px] h-[20px]' src='./location.png'/>
-                    <p className="text-[12px] font-normal text-[#2C3753]">Plot. 956, Sector 82, JLPL Industrial <br/>
+                    <p className="text-[13px] font-bold text-[#2C3753]">Plot. 956, Sector 82, JLPL Industrial <br/>
                     Area, Mohali, Punjab 140306 IN</p>
                     </div>
                   </div>
                 
                 <div className='flex gap-x-4'>
                   <img className='w-[15px] h-[20px]' src='./Phone.png'/>
-                  <p className="text-[12px] font-normal text-[#2C3753]">+91 7527869388 | +91 8288882923</p>
+                  <p className="text-[12px] font-bold text-[#2C3753]">+91 7527869388 | +91 8288882923</p>
                   {/* <span className=" text-xl  text-[#2C3753] font-bold"> <span className='font-light'>  <span className='font-bold'>|</span> </span> </span> */}
                   {/* <div className=" flex text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</div><br/> */}
                 </div>
@@ -405,7 +405,7 @@ const Form = () => {
 
                   {/* <p className=" text-base  text-[#2C3753]"></p> */}
                   {/* <p className=" text-[12px]  text-[#2C3753] ">Email: </p> */}
-                  <p className="  text-[12px]  text-[#2C3753]">yuktiherbs@gmail.com</p>
+                  <p className="  text-[12px] font-bold  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
                 </div>
 
