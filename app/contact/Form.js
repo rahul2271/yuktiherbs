@@ -359,7 +359,7 @@ const Form = () => {
                   <p className=" text-base text-lg  text-[#2C3753]">yuktiherbs@gmail.com</p>
 
                 </div>
-                <div className='block md:hidden w-max'>
+                <div className='block md:hidden w-auto'>
                   <p className=" text-lg  text-[#2C3753] font-bold">Contact: </p>
                   <p className=" text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</p> <br/>
                   
@@ -487,7 +487,7 @@ const Form = () => {
 <div className='block md:hidden place-content-center m-auto w-max'>
       <p className="text-3xl font-bold text-[#2C3753] md:text-6xl">Conditions We Treat. </p>
     </div>
-    <div className='block md:hidden'>
+    {/* <div className='block md:hidden'>
     <div className="mx-auto grid w-full max-w-7xl items-center px-2 py-10 grid-cols-2 gap-6">
   {items.map((item) => (
     <div
@@ -511,7 +511,29 @@ const Form = () => {
     </div>
   ))}
 </div>
-    </div>
+    </div> */}
+    <div className='block md:hidden rounded-[50px] '>
+<div className=' mx-auto w-auto  item-center'>
+<main className="flex flex-col  max-w-7xl items-center justify-center min-h-screen">
+        <div className=" grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5 w-auto">
+          {tilesData.map((tile, index) => (
+            <Tile 
+              className='border-2 border-white'
+              key={tile.id} 
+              iconSrc={tile.iconSrc} 
+              title={tile.title} 
+              description={tile.description}
+              bgColorClass={index % 2 === 0 ? 'bg-[#2C3753] text-white' : 'bg-white text-[#2C3753]'}
+              borderColorClass={index % 2 === 0 ? 'border-white' : 'border-[#2C3753]'}
+            />
+          ))}
+        </div>
+      </main>
+      </div>
+
+</div>
+
+
 
 {/* Doctor */}
 <Doctor/>

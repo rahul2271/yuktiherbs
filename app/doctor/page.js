@@ -7,7 +7,7 @@ import ClickableImage from "../components/ClickableImage";
 export default function Doctor(){
     return(
         <>
-           <div className="mx-auto max-w-max  px-4">
+           <div className="mx-auto max-w-7xl  px-4">
         {/* Hero Map */}
         <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">
           <div className="max-w-max bg-gray-50 place-content-center m-auto">
@@ -23,7 +23,7 @@ export default function Doctor(){
             neque itaque repudiandae sint, explicabo assumenda quam ratione placeat?
           </p> */}
         </div>
-        <div className="w-full space-y-4">
+        <div className="w-auto space-y-4">
         <ClickableImage 
           href="https://www.google.com/maps/place/Yukti+Herbs+-+Ayurveda+%26+Panchakarma+Hospital/@30.6515666,76.7313662,15z/data=!4m2!3m1!1s0x0:0xaa806599b6b71417?sa=X&ved=1t:2428&ictx=111" 
           src="/gps.jpg" 
@@ -64,7 +64,7 @@ export default function Doctor(){
             />
             </div>
             
-          <div className="">
+          <div className="md:block hidden">
             {/* <p className="text-md text-[#2C3753] font-semibold md:text-base">10+ Years of Experience &rarr;</p> */}
             <p className="text-3xl text-[#2C3753] font-bold md:text-4xl">Dr. Suhas Sakhare</p>
             <p className="text-lg text-[#2C3753] font-bold md:text-md">MD, Ph.D Ayurveda & Panchakarma Expert</p>
@@ -72,7 +72,44 @@ export default function Doctor(){
 
             <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[15px] pt-[30px]">Experienced & Passionate: </p><br/>
 
-            <p className="text-base text-[#2C3753]/80 md:mt-[-15px] md:text-sm">
+            <p className="md:text-base text-[#2C3753]/80 md:mt-[-15px] md:text-sm">
+            AYUSH Certified, MD, PhD, DYT Ayurvedic Doctor with over a decade of experience in transforming lives through Authentic Ayurveda. A Scholar who completed many case studies, published research papers in International Journals.
+            </p>
+            
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[15px] pt-[20px]">Personalized Approach: </p><br/>
+            <p className="text-base text-[#2C3753]/80 md:mt-[-15px]  md:text-md">
+            Working day & Night on Integration of age-old Ayurvedic Treatment Methodolgies with Modern Day Scientific Researches. Available for both Online/Offline Consultations to provide you with a Holistic Treatment Plan, which includes - Medicines, Panchakarma, Diet and Lifestyle Guidance.
+            </p>
+
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[15px] pt-[20px]">Expertise in: </p><br/>
+            <p className="text-base text-[#2C3753]/80 md:mt-[-15px] md:text-md">
+            Digestive Health (IBS, IBD, Ulcerative Colitis, CKD, Hyperacidity, GERD)<br/>
+            Skin Disorders (Psoriasis, Eczema, Vitiligo etc.)<br/>
+            Pain Management<br/>
+            Male & Female Infertility <br/>
+            Ayurvedic & Panchakarma Therapies<br/>
+            </p>
+
+            
+            {/* <button
+              href='#contact'
+              type="button"
+              className="rounded-md bg-[#2C3753] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#2C3753]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              Consult Now
+            </button> */}
+           
+          </div>
+
+          <div className="md:hidden block">
+            {/* <p className="text-md text-[#2C3753] font-semibold md:text-base">10+ Years of Experience &rarr;</p> */}
+            <p className="text-3xl text-[#2C3753] font-bold md:text-4xl">Dr. Suhas Sakhare</p>
+            <p className="text-lg text-[#2C3753] font-bold md:text-md">MD, Ph.D Ayurveda & Panchakarma Expert</p>
+            <p className="text-md text-[#2C3753] font-semibold md:text-base">10+ Years of Experience &rarr;</p>
+
+            <p className="text-xl text-[#2C3753] font-bold md:text-xl md:pt-[15px] pt-[30px]">Experienced & Passionate: </p><br/>
+
+            <p className="md:text-base text-[#2C3753]/80 md:mt-[-15px] md:text-sm">
             AYUSH Certified, MD, PhD, DYT Ayurvedic Doctor with over a decade of experience in transforming lives through Authentic Ayurveda. A Scholar who completed many case studies, published research papers in International Journals.
             </p>
             
@@ -102,6 +139,10 @@ export default function Doctor(){
           </div>
 
         </div>
+
+
+
+
         {/* Dr. Sandeep */}
         {/* <div className="md:hidden block flex flex-col items-center gap-x-4 gap-y-4 py-1 md:flex-row ">
 
