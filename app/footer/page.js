@@ -110,19 +110,19 @@ export default function Footer(){
                 <div>
                     <p className="text-[#2C3753] font-bold text-xl">Inside Yukti</p>
                     <p>
-                        <Link href='https://www.yuktiherbs.com/cancellation-refund-policy/'>
+                        <Link href='https://www.yuktiherbs.com/about-us/'>
                         About Us
 
                         </Link>
                     </p>
                     <p>
-                        <Link href='https://www.yuktiherbs.com/cancellation-refund-policy/'>
+                        <Link href='https://www.yuktiherbs.com/job-openings/'>
                         Job Openings
 
                         </Link>
                     </p>
                     <p>
-                        <Link href='https://www.yuktiherbs.com/cancellation-refund-policy/'>
+                        <Link href='https://www.yuktiherbs.com/readaway/'>
                         Yuktipedia
 
                         </Link>
@@ -134,7 +134,7 @@ export default function Footer(){
                 <div>
                     <p className="text-[#2C3753] font-bold text-xl">Business Opportunity</p>
                     <p>
-                        <Link href='https://www.yuktiherbs.com/cancellation-refund-policy/'>
+                        <Link href='https://www.yuktiherbs.com/distributor-ship/'>
                         Distribuorship
 
                         </Link>
@@ -257,19 +257,19 @@ export default function Footer(){
                 <div>
                     <p className="text-[#2C3753] font-bold text-xl">Inside Yukti</p>
                     <p>
-                        <Link href='https://www.yuktiherbs.com/cancellation-refund-policy/'>
+                        <Link href='https://www.yuktiherbs.com/about-us/'>
                         About Us
 
                         </Link>
                     </p>
                     <p>
-                        <Link href='https://www.yuktiherbs.com/cancellation-refund-policy/'>
+                        <Link href='https://www.yuktiherbs.com/job-openings/'>
                         Job Openings
 
                         </Link>
                     </p>
                     <p>
-                        <Link href='https://www.yuktiherbs.com/cancellation-refund-policy/'>
+                        <Link href='https://www.yuktiherbs.com/readaway/'>
                         Yuktipedia
 
                         </Link>
@@ -281,7 +281,7 @@ export default function Footer(){
                 <div>
                     <p className="text-[#2C3753] font-bold text-xl">Business Opportunity</p>
                     <p>
-                        <Link href='https://www.yuktiherbs.com/cancellation-refund-policy/'>
+                        <Link href='https://www.yuktiherbs.com/distributor-ship/'>
                         Distribuorship
 
                         </Link>

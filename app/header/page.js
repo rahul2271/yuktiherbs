@@ -13,12 +13,12 @@ export default function Header(){
               </Link>
             </li>
             <li>
-              <Link className="hover:text-mypurple"  href="/services">
+              <Link className="hover:text-mypurple" target="_blank"  href="https://store.yuktiherbs.com/">
               STORE
               </Link>
             </li>
             <li>
-              <Link className="hover:text-mypurple" href="/about">
+              <Link className="hover:text-mypurple" target="_blank" href="https://www.yuktiherbs.com/consultation/">
               CONSULTATION
               </Link>
             </li>
