@@ -8,7 +8,7 @@ export default function Header(){
           <ul className='mt-[20px] md:mt-[-50px]  flex font-medium   md:text-xl  md:place-content-center lg:flex md:space-x-6 lg:place-content-center text-[12px] text-[#2C3753] space-x-6  place-content-center text-[12px] font-bold'>
             
             <li>
-              <Link className="hover:text-mypurple" href="/">
+              <Link className="hover:text-mypurple" href="https://www.yuktiherbs.com/">
               HOME
               </Link>
             </li>
