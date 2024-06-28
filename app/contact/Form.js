@@ -118,6 +118,7 @@ const Form = () => {
     fullName: '',
     gmail: '',
     number: '',
+    issueType: '',
     query: '',
   });
 
@@ -145,7 +146,7 @@ const Form = () => {
 
     setShowTick(true);
 
-    const sheetDBEndpoint = 'https://sheetdb.io/api/v1/2p0uu86aviogy';
+    const sheetDBEndpoint = 'https://sheetdb.io/api/v1/jim20ot1ysl19';
 
     try {
       const response = await fetch(sheetDBEndpoint, {
@@ -204,7 +205,7 @@ const Form = () => {
                 <p className="font-light text-left mt-4 text-lg md:text-sm text-[#2C3753]">
                 Submit Your Details Now, to Get a Call Back!!!
                 </p>
-
+{/* 
                 <form onSubmit={handleSubmit} className="item-center mt-8 space-y-4">
                   <div></div>
                   <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
@@ -295,7 +296,136 @@ const Form = () => {
                   </div>
                   <p className="text-center mt-4 text-xl  font-bold text-[#2C3753]">OR</p>
                   <CallNowButton/>
-                </form>
+                </form> */}
+                <form onSubmit={handleSubmit} className="item-center mt-8 space-y-4">
+  <div></div>
+  <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
+    <div className="grid w-full items-center gap-1.5">
+      <label
+        className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        htmlFor="fullName"
+      >
+        Full Name
+      </label>
+      <input
+        className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+        type="text"
+        id="fullName"
+        name="fullName"
+        aria-describedby="basic-addon3 basic-addon4"
+        placeholder='Rajesh Kumar'
+        value={formData.fullName}
+        onChange={handleChange} 
+        required                        
+      />
+    </div>
+  </div>
+
+  <div className="grid w-full items-center gap-1.5">
+    <label
+      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      htmlFor="gmail"
+    >
+      Email
+    </label>
+    <input
+      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+      type="text"
+      id="gmail"
+      name="gmail"
+      aria-describedby="basic-addon3 basic-addon4"
+      placeholder='example@gmail.com'
+      value={formData.gmail}
+      onChange={handleChange} 
+      required
+    />
+  </div>
+
+  <div className="grid w-full items-center gap-1.5">
+    <label
+      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      For="basic-url"
+    >
+      Phone number
+    </label>
+    <input
+      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+      type="tel"
+      id="basic-url"
+      aria-describedby="basic-addon3 basic-addon4"
+      required
+      placeholder="8888XXXXXX"
+      name="number"
+      value={formData.number}
+      onChange={handleChange} 
+    />
+  </div>
+
+  <div className="grid w-full items-center gap-1.5">
+    <label
+      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      htmlFor="issueType"
+    >
+      Health Disorder type
+    </label>
+    <select
+      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+      id="issueType"
+      name="issueType"
+      value={formData.issueType}
+      onChange={handleChange} 
+      required
+    >
+      <option value="" disabled>Select your issue</option>
+      <option value="Digestive Disorders">Digestive Disorders</option>
+      <option value="Skin Disorders">Skin Disorders</option>
+      <option value="Joint Disorders">Joint Disorders</option>
+      <option value="Auto-Immune Disorders ">Auto-Immune Disorders      </option>
+      <option value="Liver Disorders ">Liver Disorders      </option>
+      <option value="Kidney Disorders">Kidney Disorders</option>
+      <option value="Heart Disorders">Heart Disorders</option>
+      <option value="Respiratory Disorders">Respiratory Disorders</option>
+      <option value="Male & Female Infertility">Male & Female Infertility</option>
+      <option value="Brain">Brain Disorders</option>
+      <option value="other">other</option>
+
+    </select>
+  </div>
+
+  <div className="grid w-full items-center gap-1.5">
+    <label
+      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+      htmlFor="query"
+    >
+      What problem you are facing?
+    </label>
+    <textarea
+      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+      id="query"
+      name="query"
+      aria-describedby="basic-addon3 basic-addon4"
+      placeholder='Your Health Issue !'
+      value={formData.query}
+      onChange={handleChange} 
+      required
+      cols={3}
+    />
+  </div>
+
+  <div className='justify-item-center'>
+    <button
+      type="submit"
+      className="hover:bg-[#ffdd00] hover:text-[#2C3753] bg-[#2C3753] w-full rounded-[50px] px-4 py-3 text-sm font-bold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+    >
+      Submit
+    </button>
+  </div>
+
+  <p className="text-center mt-4 text-xl font-bold text-[#2C3753]">OR</p>
+  <CallNowButton/>
+</form>
+
+                
               </div>
             </div>
             <img

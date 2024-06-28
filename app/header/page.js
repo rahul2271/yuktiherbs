@@ -42,19 +42,11 @@ export default function Header(){
               TESIMONIALS
               </Link>
             </li>
-            {/* <Image className='hidden lg:block md:block absolute inset-y-0 right-0 mt-[10px]' width={150} height={150} alt='makeinindia' src="/MAKEININDIA.png"/>  
-            <Image className='visible md:hidden lg:hidden absolute inset-y-0 right-0 mt-[10px]' width={80} height={80} alt='makeinindia' src="/MAKEININDIA.png"/>          */}
+
           </ul>
-          {/* <Image width={200} height={200} alt='makeinindia' src="/MAKEININDIA.png"/> */}
-          {/* <Link href="/contact" className="hidden lg:block ml-[1300px] mt-[-50px] ">
-      <button
-        type="button"
-        className="rounded-md bg-[#953ee2] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-      >
-        Contact Us
-      </button>
-    </Link> */}
+
           
         </header>   
     )
 }
+
