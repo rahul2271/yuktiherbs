@@ -387,7 +387,7 @@ const Form = () => {
       <option value="Respiratory Disorders">Respiratory Disorders</option>
       <option value="Male & Female Infertility">Male & Female Infertility</option>
       <option value="Brain">Brain Disorders</option>
-      <option value="other">other</option>
+      <option value="other">other  </option>
 
     </select>
   </div>
