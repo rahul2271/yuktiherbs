@@ -588,12 +588,12 @@ const Form = () => {
 </div>
     </div>
 </div> */}
-<div className='md:block hidden rounded-[50px] bg-[#2C3753]'>
+<div className='md:block hidden  bg-[#2C3753]'>
 <div className='pt-[50px] hidden md:block place-content-center m-auto w-max'>
       <p className="text-2xl font-bold text-white md:text-6xl">Conditions We Treat. </p>
     </div>
-<div className=' mx-auto w-max  item-center'>
-<main className="flex flex-col  max-w-7xl items-center justify-center min-h-screen">
+<div className='md:mt-[-130px] mx-auto w-max  item-center'>
+<main className="flex flex-col md:mb-[-50px]  max-w-7xl items-center justify-center min-h-screen">
         <div className=" grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5 w-full">
           {tilesData.map((tile, index) => (
             <Tile 
