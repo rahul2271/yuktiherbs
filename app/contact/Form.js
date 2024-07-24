@@ -7,6 +7,7 @@ import Doctor from '../doctor/page';
 import Carousel from '../components/Carousel';
 // import Head from 'next/head';
 import Tile from '../components/Tile';
+import RazorpayButton from '../components/RazorpayButton';
 // import styles from '../styles/Home.module.css';
 
 const tilesData = [
@@ -205,100 +206,7 @@ const Form = () => {
                 <p className="font-light text-left mt-4 text-lg md:text-sm text-[#2C3753]">
                 Submit Your Details Now, to Get a Call Back!!!
                 </p>
-{/* 
-                <form onSubmit={handleSubmit} className="item-center mt-8 space-y-4">
-                  <div></div>
-                  <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
-                    <div className="grid w-full  items-center gap-1.5">
-                      <label
-                        className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        htmlFor="fullName"
-                      >
-                        Full Name
-                      </label>
-                      <input
-                        className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        aria-describedby="basic-addon3 basic-addon4"
-                        placeholder='Rajesh Kumar'
-                        value={formData.fullName}
-                        onChange={handleChange} required                        
-                      />
-                    </div>
-            
-                  </div>
-                  <div className="grid w-full  items-center gap-1.5">
-                    <label
-                      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      htmlFor="gmail"
-                    >
-                      Email
-                    </label>
-                    <input
-                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                      type="text"
-                      id="gmail"
-                      name="gmail"
-                      aria-describedby="basic-addon3 basic-addon4"
-                      placeholder='example@gmail.com'
-                      value={formData.gmail}
-                      onChange={handleChange} required
-                    />
-                  </div>
-                  <div className="grid w-full  items-center gap-1.5">
-                    <label
-                      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      For="basic-url"
-                    >
-                      Phone number
-                    </label>
-                    <input
-                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                      type="tel"
-                      id="basic-url"
-                      aria-describedby="basic-addon3 basic-addon4"
-                      required
-                      placeholder="8888XXXXXX"
-                      name="number"
-                      value={formData.number}
-                onChange={handleChange} 
-                    />
-                  </div>
-                 
-                  <div className="grid w-full  items-center gap-1.5">
-                    <label
-                      className="text-sm font-medium leading-none text-black peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      htmlFor="query"
-                    >
-                      What problem you are facing?
-                    </label>
-                    <textarea
-                      className="flex h-10 w-full rounded-md border border-[#2C3753]/50 bg-bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                      id="query"
-                      name="query"
-                      aria-describedby="basic-addon3 basic-addon4"
-                      placeholder='Your Health Issue !'
-                      value={formData.query}
-                      onChange={handleChange} required
-                    
-                      cols={3}
-                    />
-                  </div>
-                  <div className='justify-item-center'>
-                  <button
-                    type="submit"
-                    className="hover:bg-[#ffdd00] hover:text-[#2C3753] bg-[#2C3753] w-full rounded-[50px] px-4 py-3 text-sm font-bold text-white shadow-sm hover:bg-mypurple/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                  >
-                    Submit
-                  </button>
-                  </div>
-                  <p className="text-center mt-4 text-xl  font-bold text-[#2C3753]">OR</p>
-                  <CallNowButton/>
-                </form> */}
-                <form onSubmit={handleSubmit} className="item-center mt-8 space-y-4">
-  <div></div>
+<form onSubmit={handleSubmit} className="item-center mt-8 space-y-4">
   <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
     <div className="grid w-full items-center gap-1.5">
       <label
@@ -419,8 +327,16 @@ const Form = () => {
     >
       Submit
     </button>
+    {showTick && (
+                  <div className="text-center text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mx-auto mt-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p>Form submitted successfully!</p>
+                  </div>
+                )}
   </div>
-
+  {/* <RazorpayButton /> */}
   <p className="text-center mt-4 text-xl font-bold text-[#2C3753]">OR</p>
   <CallNowButton/>
 </form>
@@ -445,13 +361,6 @@ const Form = () => {
       </div>
       
 
-      {/* {showTick && (
-        <div className='messageok'>
-        <div className="centered-div">
-          <Image src={Check} alt="Check" id='check' />
-        </div>
-        </div>
-      )} */}
 
 
 {/* Our Hospital */}
@@ -526,7 +435,7 @@ const Form = () => {
                 
                 <div className='flex gap-x-4'>
                   <img className='w-[15px] h-[20px]' src='./Phone.png'/>
-                  <p className="text-[12px] font-bold text-[#2C3753]">+91 7527869388 | +91 8288882923</p>
+                  <p className="text-[12px] font-bold text-[#2C3753]">+91 8288882923</p>
                   {/* <span className=" text-xl  text-[#2C3753] font-bold"> <span className='font-light'>  <span className='font-bold'>|</span> </span> </span> */}
                   {/* <div className=" flex text-base  text-[#2C3753] ">+91 7527869388 <span className='font-bold'>|</span> +91 8288882923</div><br/> */}
                 </div>
@@ -592,8 +501,8 @@ const Form = () => {
 <div className='pt-[50px] hidden md:block place-content-center m-auto w-max'>
       <p className="text-2xl font-bold text-white md:text-6xl">Conditions We Treat. </p>
     </div>
-<div className='md:mt-[-130px] mx-auto w-max  item-center'>
-<main className="flex flex-col md:mb-[-50px]  max-w-7xl items-center justify-center min-h-screen">
+<div className='md:pt-[30px] md:pb-[100px] mx-auto w-max  item-center'>
+<main className="flex flex-col md:mb-[-50px]  max-w-7xl items-center justify-center ">
         <div className=" grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5 w-full">
           {tilesData.map((tile, index) => (
             <Tile 

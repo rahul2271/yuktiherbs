@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 
 const CallNowButton = () => {
-  const phoneNumber = '+91 7527869388'; // Replace with your actual phone number
+  const phoneNumber = '+91 8288882923'; // Replace with your actual phone number
 
   const handleCallButtonClick = () => {
     window.location.href = `tel:${phoneNumber}`;

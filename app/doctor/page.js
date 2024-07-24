@@ -8,14 +8,15 @@ export default function Doctor(){
     return(
         <>
            <div className="mx-auto max-w-7xl  px-4">
+            <div className="flex mx-auto max-w-7xl place-content-center mt-[110px] gap-[50px]">
         {/* Hero Map */}
         <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">
-          <div className="max-w-max bg-gray-50 place-content-center m-auto">
+          <div className="max-w-max  place-content-center m-auto">
             {/* <p className="text-xs font-semibold leading-normal md:text-sm">About the company</p> */}
-      <p className="place-content-center m-auto w-max text-3xl font-bold text-[#2C3753] md:text-6xl">Locate Us Here. </p>
+      <p className="place-content-center m-auto w-max text-3xl font-bold text-[#2C3753] md:text-5xl">Locate Us Here. </p>
 
           </div>
-          <p className="place-content-center m-auto w-max text-lg font-bold text-[#2C3753] md:text-5xl md:leading-10">
+          <p className="place-content-center m-auto w-max text-lg font-bold text-[#2C3753] md:text-2xl md:leading-10">
             Made with love, right here in Mohali
           </p>
           {/* <p className="max-w-4xl text-base text-gray-600 md:text-xl">
@@ -28,12 +29,16 @@ export default function Doctor(){
           href="https://www.google.com/maps/place/Yukti+Herbs+-+Ayurveda+%26+Panchakarma+Hospital/@30.6515666,76.7313662,15z/data=!4m2!3m1!1s0x0:0xaa806599b6b71417?sa=X&ved=1t:2428&ictx=111" 
           src="/gps.jpg" 
           alt="Location" 
-          width={1500} 
-          height={900} 
+          width={500} 
+          height={100} 
         />
+        </div>
+        </div>
+        
+       
         
 
-        </div>
+        
         {/* locations */}
 
         {/* <hr className="mt-20" /> */}
