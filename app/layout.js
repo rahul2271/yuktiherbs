@@ -20,16 +20,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head><link rel="icon" href="/favicon.ico" /> <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10888307324">
-</script>
-<script>
+      <head>
+    <link rel="icon" href="/favicon.ico" />
+   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10888307324">
+    </script>
+    <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'AW-10888307324');
-</script></head>
+</script>
+    </head>
       <body className={poppins.className}>
       <Header/>
       {children}
