@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Router from 'next/router';
-
+import Carousel from './components/Carousel.js'
+import CallNowButton from './call/page.js'
 const Form = () => {
   const [showTick, setShowTick] = useState(false);
   const [formData, setFormData] = useState({
